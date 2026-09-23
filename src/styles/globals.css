@@ -1,0 +1,120 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Garet";
+  src: url("/assets/fonts/Garet-Regular.otf") format("opentype");
+  font-display: swap;
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Garet";
+  src: url("/assets/fonts/Garet-Bold.otf") format("opentype");
+  font-display: swap;
+  font-style: normal;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Noto Serif Display";
+  src: url("/assets/fonts/NotoSerifDisplay_ExtraCondensed-Regular.ttf")
+    format("truetype");
+  font-display: swap;
+  font-style: normal;
+  font-weight: 400;
+}
+
+:root {
+  --background: #f8f4e9;
+  --foreground: #172847;
+  --color-navy: #0f2b4d;
+  --color-navy-light: #173b67;
+  --color-ink: #22324a;
+  --color-cream: #f8f4e9;
+  --color-paper: #fffdf7;
+  --color-gold: #d8ad45;
+  --color-gold-dark: #c79a2e;
+  --color-coral: #df6f62;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-navy: var(--color-navy);
+  --color-navy-light: var(--color-navy-light);
+  --color-ink: var(--color-ink);
+  --color-cream: var(--color-cream);
+  --color-paper: var(--color-paper);
+  --color-gold: var(--color-gold);
+  --color-gold-dark: var(--color-gold-dark);
+  --color-coral: var(--color-coral);
+  --font-garet: "Garet", system-ui, -apple-system, sans-serif;
+  --font-noto: "Noto Serif Display", Georgia, serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  max-width: 100%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+  background: var(--background);
+  color: var(--foreground);
+  font-family: "Garet", system-ui, -apple-system, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.font-noto {
+  font-family: "Noto Serif Display", Georgia, serif;
+}
+
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 1.25rem;
+  color: var(--color-navy);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+}
+
+.eyebrow::before {
+  width: 2.7rem;
+  height: 2px;
+  background: var(--color-gold-dark);
+  content: "";
+}
+
+.btn-primary,
+.shadow-gold {
+  box-shadow: 0 12px 24px rgb(199 154 46 / 0.22);
+}
+
+.shadow-navy {
+  box-shadow: 0 12px 24px rgb(15 43 77 / 0.18);
+}
+
+.nav-line {
+  position: absolute;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 2px;
+  border-radius: 999px;
+  background: currentColor;
+  transition: transform 180ms ease, opacity 180ms ease;
+}
+
+
