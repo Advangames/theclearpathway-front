@@ -1,6 +1,10 @@
 import type { MetadataRoute } from "next";
 import { courses } from "@/data/courses";
 
+// Required for compatibility with `output: "export"` (static export builds,
+// e.g. the temporary GitHub Pages deployment).
+export const dynamic = "force-static";
+
 const SITE_URL =
   process.env.NEXT_PUBLIC_SITE_URL || "https://theclearpathway.com";
 
