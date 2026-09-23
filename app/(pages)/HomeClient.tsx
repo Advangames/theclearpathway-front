@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { Button } from "@/components/ui";
 import { courses } from "@/data/courses";
 import { metrics, pillars } from "@/data/home";
@@ -305,7 +306,7 @@ export default function HomeClient() {
                   <p className="mt-4 min-h-20 text-sm leading-6 text-ink/80">
                     {course.corePromise}
                   </p>
-                  <a
+                  <Link
                     className="mt-5 inline-flex items-center gap-3 text-sm font-bold text-gold-dark transition hover:text-navy"
                     href={`/courses/${course.slug}`}
                   >
@@ -324,7 +325,7 @@ export default function HomeClient() {
                         strokeWidth="2"
                       />
                     </svg>
-                  </a>
+                  </Link>
                 </div>
               </article>
             ))}

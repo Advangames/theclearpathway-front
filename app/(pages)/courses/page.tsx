@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { Button } from "@/components/ui";
 import { courseRecommendations, courses, guides } from "@/data/courses";
 
@@ -70,12 +71,12 @@ export default function CoursesPage() {
                 </p>
                 <h2 className="mt-3 text-2xl leading-8 text-navy">{course.title}</h2>
                 <p className="mt-3 text-sm leading-6 text-ink/80">{course.corePromise}</p>
-                <a
+                <Link
                   className="mt-5 inline-flex items-center gap-3 text-sm font-bold text-gold-dark transition hover:text-navy"
                   href={`/courses/${course.slug}`}
                 >
                   Learn More
-                </a>
+                </Link>
               </div>
             ))}
           </div>

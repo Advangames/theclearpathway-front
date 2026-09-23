@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useEffect, useState } from "react";
 import { navItems } from "@/data/home";
 import { Button } from "@/components/ui";
@@ -23,13 +24,13 @@ export function Header() {
 
         <nav aria-label="Main navigation" className="hidden items-center gap-8 lg:flex">
           {navItems.map((item) => (
-            <a
+            <Link
               className="text-sm font-bold text-white/90 transition hover:text-gold"
               href={item.href}
               key={item.href}
             >
               {item.label}
-            </a>
+            </Link>
           ))}
         </nav>
 
@@ -61,14 +62,14 @@ export function Header() {
             className="mx-auto flex max-w-7xl flex-col gap-1 px-4 py-5 sm:px-6"
           >
             {navItems.map((item) => (
-              <a
+              <Link
                 className="rounded-md px-3 py-3 text-base font-bold text-white/90 transition hover:bg-white/10 hover:text-gold"
                 href={item.href}
                 key={item.href}
                 onClick={() => setIsMenuOpen(false)}
               >
                 {item.label}
-              </a>
+              </Link>
             ))}
             <Button className="mt-4 w-full" href="/courses" size="md">
               Get Started
