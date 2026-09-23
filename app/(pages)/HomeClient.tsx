@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import anaPhoto from "@/assets/images/Ana_Photo.png";
 import { Button } from "@/components/ui";
 import { courses } from "@/data/courses";
 import { metrics, pillars } from "@/data/home";
@@ -78,7 +79,7 @@ export default function HomeClient() {
             fill
             priority
             sizes="54vw"
-            src="/assets/Ana_Photo.png"
+            src={anaPhoto}
           />
           <div className="absolute inset-0 bg-gradient-to-r from-paper from-0% via-transparent via-40% to-transparent to-100%" />
         </div>
@@ -128,7 +129,7 @@ export default function HomeClient() {
                 className="object-cover object-[72%_0%]"
                 fill
                 sizes="100vw"
-                src="/assets/Ana_Photo.png"
+                src={anaPhoto}
               />
             </div>
           </div>
@@ -165,7 +166,7 @@ export default function HomeClient() {
                 className="object-cover object-[57%_31%]"
                 fill
                 sizes="(min-width: 1024px) 45vw, 100vw"
-                src="/assets/Ana_Photo.png"
+                src={anaPhoto}
               />
             </div>
             <blockquote className="relative border-l-2 border-gold pl-6 text-ink">
@@ -218,7 +219,7 @@ export default function HomeClient() {
             className="object-cover object-[5%_50%]"
             fill
             sizes="100vw"
-            src="/assets/Ana_Photo.png"
+            src={anaPhoto}
           />
         </div>
         <div className="absolute inset-0 bg-navy/85" />
@@ -286,7 +287,7 @@ export default function HomeClient() {
                     className="object-cover"
                     fill
                     sizes="(min-width: 768px) 33vw, 100vw"
-                    src="/assets/Ana_Photo.png"
+                    src={anaPhoto}
                     style={{ objectPosition: course.imagePosition }}
                   />
                   <div className="absolute -bottom-8 left-6">

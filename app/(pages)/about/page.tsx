@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
+import anaPhoto from "@/assets/images/Ana_Photo.png";
 import { Button } from "@/components/ui";
 
 export const metadata: Metadata = {
@@ -22,7 +23,7 @@ export default function AboutPage() {
             fill
             priority
             sizes="54vw"
-            src="/assets/Ana_Photo.png"
+            src={anaPhoto}
           />
           <div className="absolute inset-0 bg-gradient-to-r from-paper from-0% via-transparent via-40% to-transparent to-100%" />
         </div>
@@ -51,7 +52,7 @@ export default function AboutPage() {
                 className="object-cover object-[72%_0%]"
                 fill
                 sizes="100vw"
-                src="/assets/Ana_Photo.png"
+                src={anaPhoto}
               />
             </div>
           </div>
@@ -91,7 +92,7 @@ export default function AboutPage() {
                 className="object-cover object-[57%_31%]"
                 fill
                 sizes="(min-width: 1024px) 45vw, 100vw"
-                src="/assets/Ana_Photo.png"
+                src={anaPhoto}
               />
             </div>
             <blockquote className="relative border-l-2 border-gold pl-6 text-ink">

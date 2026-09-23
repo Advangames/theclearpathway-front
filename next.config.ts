@@ -9,7 +9,6 @@ const repoName = "theclearpathway-front";
 const nextConfig: NextConfig = {
   output: isGithubPages ? "export" : "standalone",
   basePath: isGithubPages ? `/${repoName}` : undefined,
-  assetPrefix: isGithubPages ? `/${repoName}/` : undefined,
   trailingSlash: isGithubPages,
   images: {
     dangerouslyAllowSVG: true,
