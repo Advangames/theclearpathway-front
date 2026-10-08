@@ -1,16 +1,30 @@
 import type { Metadata } from "next";
-import Link from "next/link";
+import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Button } from "@/components/ui";
-import { courseRecommendations, courses, guides } from "@/data/courses";
+import { courses } from "@/data/courses";
+import { localeAlternates } from "@/i18n/alternates";
+import { Link } from "@/i18n/navigation";
 
-export const metadata: Metadata = {
-  title: "Courses",
-  description:
-    "The CLEAR Pathway brings together three courses for teachers and educational entrepreneurs who want to teach English with greater clarity, structure, and communicative purpose.",
-  alternates: {
-    canonical: "/courses",
-  },
+type PageProps = {
+  params: Promise<{ locale: string }>;
 };
+
+type GuideItem = { title: string; description: string };
+type RecommendationItem = { need: string; recommendation: string };
+
+export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "courses.meta" });
+
+  return {
+    title: t("title"),
+    description: t("description"),
+    alternates: {
+      canonical: `/${locale}/courses`,
+      languages: localeAlternates("/courses"),
+    },
+  };
+}
 
 function CourseIcon({ tone }: { tone: string }) {
   const color = tone === "coral" ? "bg-coral" : tone === "gold" ? "bg-gold" : "bg-navy";
@@ -32,24 +46,23 @@ function CourseIcon({ tone }: { tone: string }) {
   );
 }
 
-export default function CoursesPage() {
+export default async function CoursesPage({ params }: PageProps) {
+  const { locale } = await params;
+  setRequestLocale(locale);
+  const t = await getTranslations("courses");
+  const tItems = await getTranslations("courses.items");
+  const guides = t.raw("guides.items") as GuideItem[];
+  const recommendations = t.raw("recommendations.items") as RecommendationItem[];
+
   return (
     <div>
       <section className="bg-paper">
         <div className="mx-auto max-w-4xl px-4 py-16 sm:px-6 lg:px-8">
-          <p className="eyebrow">Courses and Resources</p>
+          <p className="eyebrow">{t("hero.eyebrow")}</p>
           <h1 className="mt-5 font-noto text-5xl leading-[0.98] text-navy sm:text-6xl">
-            Turn a strong teaching framework into English classes that truly
-            work.
+            {t("hero.title")}
           </h1>
-          <p className="mt-5 leading-7 text-ink/80">
-            The CLEAR Pathway brings together three courses for teachers and
-            educational entrepreneurs who want to teach English with greater
-            clarity, structure, and communicative purpose. Each course
-            develops an essential dimension of an ESL class: grammar through
-            a clear sequence → reading through explicit instruction →
-            authentic communication in the classroom.
-          </p>
+          <p className="mt-5 leading-7 text-ink/80">{t("hero.description")}</p>
         </div>
       </section>
 
@@ -67,15 +80,19 @@ export default function CoursesPage() {
                     course.tone === "coral" ? "text-coral" : "text-gold-dark"
                   }`}
                 >
-                  {course.eyebrow}
+                  {tItems(`${course.messageKey}.eyebrow`)}
                 </p>
-                <h2 className="mt-3 text-2xl leading-8 text-navy">{course.title}</h2>
-                <p className="mt-3 text-sm leading-6 text-ink/80">{course.corePromise}</p>
+                <h2 className="mt-3 text-2xl leading-8 text-navy">
+                  {tItems(`${course.messageKey}.title`)}
+                </h2>
+                <p className="mt-3 text-sm leading-6 text-ink/80">
+                  {tItems(`${course.messageKey}.corePromise`)}
+                </p>
                 <Link
                   className="mt-5 inline-flex items-center gap-3 text-sm font-bold text-gold-dark transition hover:text-navy"
                   href={`/courses/${course.slug}`}
                 >
-                  Learn More
+                  {t("learnMore")}
                 </Link>
               </div>
             ))}
@@ -85,16 +102,11 @@ export default function CoursesPage() {
 
       <section className="bg-paper" id="guides">
         <div className="mx-auto max-w-5xl px-4 py-16 sm:px-6 lg:px-8">
-          <p className="eyebrow">Courses and Guides</p>
+          <p className="eyebrow">{t("guidesSection.eyebrow")}</p>
           <h2 className="mt-5 text-3xl text-navy sm:text-4xl">
-            Two distinct elements
+            {t("guidesSection.title")}
           </h2>
-          <p className="mt-5 leading-7 text-ink/80">
-            The three courses above are the courses that will be presented in
-            the offer. The following guides are supporting pedagogical
-            materials: they organise the content and resources that underpin
-            the training, but they do not replace or rename the courses.
-          </p>
+          <p className="mt-5 leading-7 text-ink/80">{t("guidesSection.description")}</p>
           <div className="mt-8 grid gap-6 sm:grid-cols-3">
             {guides.map((guide) => (
               <div className="rounded-md bg-cream p-6" key={guide.title}>
@@ -109,26 +121,19 @@ export default function CoursesPage() {
       <section className="bg-navy text-white">
         <div className="mx-auto max-w-3xl px-4 py-16 text-center sm:px-6 lg:px-8">
           <p className="eyebrow justify-center text-white before:bg-gold">
-            Complementary Resource
+            {t("complementary.eyebrow")}
           </p>
-          <h2 className="mt-5 text-3xl sm:text-4xl">
-            Make what you need to teach visible.
-          </h2>
-          <p className="mt-5 leading-7 text-white/80">
-            The Infographic Guide gathers grammar topics in visual formats
-            that are ready to project, explain, or consult in class. It is a
-            complementary resource that supports Grammar through PPP Model in
-            particular.
-          </p>
+          <h2 className="mt-5 text-3xl sm:text-4xl">{t("complementary.title")}</h2>
+          <p className="mt-5 leading-7 text-white/80">{t("complementary.description")}</p>
         </div>
       </section>
 
       <section className="bg-cream">
         <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6 lg:px-8">
-          <p className="eyebrow">Which Course Is Right for You?</p>
-          <h2 className="mt-5 text-3xl text-navy sm:text-4xl">Find your path</h2>
+          <p className="eyebrow">{t("recommendations.eyebrow")}</p>
+          <h2 className="mt-5 text-3xl text-navy sm:text-4xl">{t("recommendations.title")}</h2>
           <div className="mt-8 grid gap-6 sm:grid-cols-2">
-            {courseRecommendations.map((item) => (
+            {recommendations.map((item) => (
               <div
                 className="rounded-md border border-navy/10 bg-paper p-6 shadow-lg shadow-navy/5"
                 key={item.recommendation}
@@ -143,21 +148,14 @@ export default function CoursesPage() {
 
       <section className="bg-paper px-4 py-16 sm:px-6" id="resources">
         <div className="mx-auto max-w-3xl text-center">
-          <h2 className="text-3xl text-navy sm:text-4xl">
-            You do not need to choose between structure and communication.
-            You can teach with both.
-          </h2>
-          <p className="mt-5 leading-7 text-ink/80">
-            The CLEAR Pathway provides a practical route for understanding the
-            framework, transforming grammar instruction, and structuring
-            classes where students use English with greater confidence.
-          </p>
+          <h2 className="text-3xl text-navy sm:text-4xl">{t("closing.title")}</h2>
+          <p className="mt-5 leading-7 text-ink/80">{t("closing.description")}</p>
           <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
             <Button href="#courses" variant="primary">
-              Explore the Complete Pathway
+              {t("closing.ctaPrimary")}
             </Button>
             <Button href="/#resources" variant="outline">
-              Request Information for Your Institution
+              {t("closing.ctaSecondary")}
             </Button>
           </div>
         </div>

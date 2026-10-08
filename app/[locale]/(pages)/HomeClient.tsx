@@ -1,9 +1,10 @@
+import { useTranslations } from "next-intl";
 import Image from "next/image";
-import Link from "next/link";
 import anaPhoto from "@/assets/images/Ana_Photo.png";
+import anaPhoto2 from "@/assets/images/Ana_Photo_2.png";
 import { Button } from "@/components/ui";
 import { courses } from "@/data/courses";
-import { metrics, pillars } from "@/data/home";
+import { Link } from "@/i18n/navigation";
 
 function CapIcon() {
   return (
@@ -68,7 +69,15 @@ function CourseIcon({ tone }: { tone: string }) {
   );
 }
 
+type PillarItem = { title: string; description: string };
+type MetricItem = { value: string; label: string; source: string };
+
 export default function HomeClient() {
+  const t = useTranslations("home");
+  const tCourses = useTranslations("courses.items");
+  const pillars = useTranslations("pillars").raw("items") as PillarItem[];
+  const metrics = useTranslations("metrics").raw("items") as MetricItem[];
+
   return (
     <div>
       <section className="relative isolate overflow-hidden bg-paper" id="home">
@@ -84,28 +93,32 @@ export default function HomeClient() {
           <div className="absolute inset-0 bg-gradient-to-r from-paper from-0% via-transparent via-40% to-transparent to-100%" />
         </div>
 
-        <div className="mx-auto grid min-h-[calc(100dvh-5rem)] max-w-7xl items-center gap-10 px-4 py-14 sm:px-6 lg:grid-cols-[0.95fr_1.05fr] lg:px-8 lg:py-20">
+        <div className="mx-auto grid min-h-[calc(100dvh-5rem)] max-w-7xl items-center gap-10 px-4 py-10 sm:px-6 lg:grid-cols-[0.95fr_1.05fr] lg:px-8 lg:py-14">
           <div className="relative z-10 max-w-xl">
-            <p className="eyebrow">The CLEAR Pathway</p>
-            <h1 className="mt-6 font-noto text-5xl leading-[0.93] text-navy sm:text-6xl lg:text-7xl">
-              I am{" "}
-              <span className="text-gold-dark">Ana Cristina Volante</span>, an ESL Academic Director
+            <p className="eyebrow">{t("hero.eyebrow")}</p>
+            <h1 className="mt-5 text-navy">
+              <span className="block font-noto text-5xl leading-[0.93] sm:text-6xl lg:text-7xl">
+                {t("hero.titleStart")}{" "}
+                <span className="text-gold-dark">{t("hero.name")}</span>
+                {t("hero.titleEnd")}
+              </span>
+              <span className="mt-3 block text-lg font-bold leading-6 text-navy/80 sm:text-xl">
+                {t("hero.subtitle")}
+              </span>
             </h1>
-            <p className="mt-7 max-w-xl text-lg leading-7 text-ink">
-              Certified English–Spanish Translator, and the founder of An
-              Education Center (AEC). My work brings together classroom experience, academic leadership, and teacher
-              training so English can be taught with purpose, structure, and real communicative outcomes.
+            <p className="mt-5 max-w-xl text-lg leading-7 text-ink">
+              {t("hero.description")}
             </p>
-            <div className="mt-8 flex flex-col gap-4 sm:flex-row">
+            <div className="mt-6 flex flex-col gap-4 sm:flex-row">
               <Button href="#pathway" variant="primary">
-                Explore the Methodology
+                {t("hero.ctaPrimary")}
               </Button>
               <Button href="/about" variant="outline">
-                About Ana Cristina
+                {t("hero.ctaSecondary")}
               </Button>
             </div>
 
-            <div className="mt-12 grid gap-5 text-navy sm:grid-cols-3">
+            <div className="mt-8 grid gap-5 text-navy sm:grid-cols-3">
               {pillars.map((pillar, index) => (
                 <div className="flex items-start gap-3" key={pillar.title}>
                   <span className="shrink-0 text-gold-dark">
@@ -139,23 +152,15 @@ export default function HomeClient() {
       <section className="overflow-hidden bg-paper" id="about">
         <div className="mx-auto grid max-w-7xl items-center gap-10 px-4 py-16 sm:px-6 lg:grid-cols-[0.88fr_1.12fr] lg:px-8 lg:py-0">
           <div className="max-w-xl py-4 lg:py-20">
-            <p className="eyebrow">About Ana Cristina Volante</p>
+            <p className="eyebrow">{t("about.eyebrow")}</p>
             <h2 className="mt-5 font-noto text-5xl leading-[0.95] text-navy sm:text-6xl">
-              A professional journey built in the classroom
+              {t("about.title")}
             </h2>
-            <p className="mt-6 text-base leading-7 text-ink">
-              For more than ten years, I have worked with children from different schools through extracurricular English
-              classes at An Education Center (AEC). 
-            </p>
-            <p className="mt-2 text-base leading-7 text-ink">This experience revealed a recurring reality: many students study English
-              for years but do not always develop the tools, confidence, or opportunities they need to communicate orally.
-            </p>
-            <p className="mt-2 text-base leading-7 text-ink">With more than eight years of professional experience in language education, academic leadership, and
-              institutional management, I have worked in ESL program design, teacher training, curriculum development,
-              academic coordination, and quality assurance.
-            </p>
+            <p className="mt-6 text-base leading-7 text-ink">{t("about.paragraph1")}</p>
+            <p className="mt-2 text-base leading-7 text-ink">{t("about.paragraph2")}</p>
+            <p className="mt-2 text-base leading-7 text-ink">{t("about.paragraph3")}</p>
             <Button className="mt-8" href="/about">
-              Get to Know My Journey
+              {t("about.cta")}
             </Button>
           </div>
 
@@ -166,21 +171,18 @@ export default function HomeClient() {
                 className="object-cover object-[57%_31%]"
                 fill
                 sizes="(min-width: 1024px) 45vw, 100vw"
-                src={anaPhoto}
+                src={anaPhoto2}
               />
             </div>
             <blockquote className="relative border-l-2 border-gold pl-6 text-ink">
               <span className="font-noto text-7xl leading-none text-gold/80">
                 &quot;
               </span>
-              <p className="-mt-6 text-lg italic leading-8">
-                I believe in educators, and in the transformative power of a
-                clear and practical approach to teaching English.
-              </p>
+              <p className="-mt-6 text-lg italic leading-8">{t("about.quote")}</p>
               <footer className="mt-8">
-                <p className="text-3xl text-navy">Ana Cristina Volante</p>
+                <p className="text-3xl text-navy">{t("about.quoteName")}</p>
                 <p className="mt-2 text-xs font-bold uppercase tracking-[0.25em] text-navy/70">
-                  Founder, AEC
+                  {t("about.quoteRole")}
                 </p>
               </footer>
             </blockquote>
@@ -190,24 +192,15 @@ export default function HomeClient() {
         <div className="mx-auto grid max-w-7xl gap-6 px-4 pb-16 sm:grid-cols-2 sm:px-6 lg:px-8 lg:pb-20">
           <div className="rounded-md bg-navy/10 p-6">
             <p className="text-xs font-bold uppercase tracking-[0.25em] text-navy">
-              Certified Translation Experience
+              {t("about.translationTitle")}
             </p>
-            <p className="mt-3 text-sm leading-6 text-ink/80">
-              I am also a Certified English–Spanish Translator with legal,
-              academic, and corporate experience. This strengthens my view of
-              language as a tool for understanding, self-expression, and
-              connection in real, multicultural contexts.
-            </p>
+            <p className="mt-3 text-sm leading-6 text-ink/80">{t("about.translationText")}</p>
           </div>
           <div className="rounded-md bg-gold/15 p-6">
             <p className="text-xs font-bold uppercase tracking-[0.25em] text-coral">
-              English as a Tool for Communication
+              {t("about.toolTitle")}
             </p>
-            <p className="mt-3 text-sm leading-6 text-ink/80">
-              Teaching English should not be limited to memorising grammar
-              rules. It should prepare students to use the language with
-              clarity, confidence, and purpose.
-            </p>
+            <p className="mt-3 text-sm leading-6 text-ink/80">{t("about.toolText")}</p>
           </div>
         </div>
       </section>
@@ -219,24 +212,20 @@ export default function HomeClient() {
             className="object-cover object-[5%_50%]"
             fill
             sizes="100vw"
-            src={anaPhoto}
+            src={anaPhoto2}
           />
         </div>
         <div className="absolute inset-0 bg-navy/85" />
 
         <div className="relative mx-auto grid max-w-7xl gap-10 px-4 py-16 sm:px-6 lg:grid-cols-[1fr_1.45fr] lg:items-center lg:px-8">
           <div>
-            <p className="eyebrow text-white before:bg-gold">The Challenge</p>
+            <p className="eyebrow text-white before:bg-gold">{t("challenge.eyebrow")}</p>
             <h2 className="mt-5 font-noto text-5xl leading-[0.98] text-white">
-              The English Proficiency Gap in Latin America
+              {t("challenge.title")}
             </h2>
-            <p className="mt-5 leading-7 text-white/80">
-              Latin America needs an English education that goes beyond content
-              and develops the ability to understand, interact and communicate
-              in real situations.
-            </p>
+            <p className="mt-5 leading-7 text-white/80">{t("challenge.description")}</p>
             <Button className="mt-8" href="/challenge">
-              See the Evidence
+              {t("challenge.cta")}
             </Button>
           </div>
 
@@ -262,16 +251,13 @@ export default function HomeClient() {
       <section className="bg-cream" id="pathway">
         <div className="mx-auto grid max-w-7xl gap-10 px-4 py-16 sm:px-6 lg:grid-cols-[0.65fr_1.6fr] lg:px-8">
           <div id="courses">
-            <p className="eyebrow">The CLEAR Pathway</p>
+            <p className="eyebrow">{t("pathway.eyebrow")}</p>
             <h2 className="mt-5 font-noto text-5xl leading-[0.98] text-navy sm:text-6xl">
-              A Progressive Learning Journey
+              {t("pathway.title")}
             </h2>
-            <p className="mt-5 leading-7 text-ink/80">
-              Three specialized courses designed to give educators the tools,
-              structure and confidence to teach English more effectively.
-            </p>
+            <p className="mt-5 leading-7 text-ink/80">{t("pathway.description")}</p>
             <Button className="mt-8" href="/courses">
-              Explore All Courses
+              {t("pathway.cta")}
             </Button>
           </div>
 
@@ -287,7 +273,7 @@ export default function HomeClient() {
                     className="object-cover"
                     fill
                     sizes="(min-width: 768px) 33vw, 100vw"
-                    src={anaPhoto}
+                    src={anaPhoto2}
                     style={{ objectPosition: course.imagePosition }}
                   />
                   <div className="absolute -bottom-8 left-6">
@@ -299,19 +285,19 @@ export default function HomeClient() {
                     className={`text-xs font-bold uppercase tracking-[0.25em] ${course.tone === "coral" ? "text-coral" : "text-gold-dark"
                       }`}
                   >
-                    {course.eyebrow}
+                    {tCourses(`${course.messageKey}.eyebrow`)}
                   </p>
                   <h3 className="mt-3 break-words text-2xl leading-8 text-navy">
-                    {course.title}
+                    {tCourses(`${course.messageKey}.title`)}
                   </h3>
                   <p className="mt-4 min-h-20 text-sm leading-6 text-ink/80">
-                    {course.corePromise}
+                    {tCourses(`${course.messageKey}.corePromise`)}
                   </p>
                   <Link
                     className="mt-5 inline-flex items-center gap-3 text-sm font-bold text-gold-dark transition hover:text-navy"
                     href={`/courses/${course.slug}`}
                   >
-                    Learn More
+                    {t("pathway.learnMore")}
                     <svg
                       aria-hidden="true"
                       className="size-4"
@@ -337,9 +323,9 @@ export default function HomeClient() {
       <section className="bg-paper px-4 py-12 sm:px-6" id="resources">
         <div className="mx-auto flex max-w-5xl flex-col items-center gap-8 border-y border-gold/45 py-8 text-center lg:flex-row lg:justify-center lg:text-left">
           <p className="text-sm font-bold uppercase tracking-[0.32em] text-navy">
-            Let&apos;s raise the standard together
+            {t("resources.tagline")}
           </p>
-          <Button href="/courses">Start Your Journey</Button>
+          <Button href="/courses">{t("resources.cta")}</Button>
         </div>
       </section>
     </div>

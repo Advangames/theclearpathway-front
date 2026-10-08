@@ -1,13 +1,16 @@
 "use client";
 
-import Link from "next/link";
+import { useTranslations } from "next-intl";
 import { useEffect, useState } from "react";
-import { navItems } from "@/data/home";
 import { Button } from "@/components/ui";
+import { navItems } from "@/data/home";
+import { Link } from "@/i18n/navigation";
 import { BrandMark } from "./BrandMark";
+import { LanguageSwitcher } from "./LanguageSwitcher";
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const t = useTranslations("nav");
 
   useEffect(() => {
     document.body.style.overflow = isMenuOpen ? "hidden" : "";
@@ -29,14 +32,15 @@ export function Header() {
               href={item.href}
               key={item.href}
             >
-              {item.label}
+              {t(item.key)}
             </Link>
           ))}
         </nav>
 
-        <div className="hidden lg:block">
+        <div className="hidden items-center gap-5 lg:flex">
+          <LanguageSwitcher />
           <Button href="/courses" size="sm">
-            Get Started
+            {t("getStarted")}
           </Button>
         </div>
 
@@ -68,11 +72,14 @@ export function Header() {
                 key={item.href}
                 onClick={() => setIsMenuOpen(false)}
               >
-                {item.label}
+                {t(item.key)}
               </Link>
             ))}
+            <div className="mt-2 px-3">
+              <LanguageSwitcher />
+            </div>
             <Button className="mt-4 w-full" href="/courses" size="md">
-              Get Started
+              {t("getStarted")}
             </Button>
           </nav>
         </div>

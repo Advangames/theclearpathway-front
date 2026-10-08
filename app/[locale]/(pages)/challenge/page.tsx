@@ -1,38 +1,51 @@
 import type { Metadata } from "next";
+import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Button } from "@/components/ui";
-import { challengeFactors, instructionalStrands, solutionFeatures } from "@/data/challenge";
-import { metrics } from "@/data/home";
+import { localeAlternates } from "@/i18n/alternates";
 
-export const metadata: Metadata = {
-  title: "The Challenge & The Solution",
-  description:
-    "Latin America needs an English education that goes beyond content and develops the ability to understand, interact and communicate in real situations.",
-  alternates: {
-    canonical: "/challenge",
-  },
+type PageProps = {
+  params: Promise<{ locale: string }>;
 };
 
-export default function ChallengePage() {
+type FactorItem = { number: string; title: string; description: string };
+type FeatureItem = { title: string; description: string };
+type MetricItem = { value: string; label: string; source: string };
+
+export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "challenge.meta" });
+
+  return {
+    title: t("title"),
+    description: t("description"),
+    alternates: {
+      canonical: `/${locale}/challenge`,
+      languages: localeAlternates("/challenge"),
+    },
+  };
+}
+
+export default async function ChallengePage({ params }: PageProps) {
+  const { locale } = await params;
+  setRequestLocale(locale);
+  const t = await getTranslations("challenge");
+  const tMetrics = await getTranslations("metrics");
+  const metrics = tMetrics.raw("items") as MetricItem[];
+  const factors = t.raw("factors.items") as FactorItem[];
+  const features = t.raw("solution.features") as FeatureItem[];
+  const strands = t.raw("strands.items") as FeatureItem[];
+
   return (
     <div>
       <section className="bg-paper">
         <div className="mx-auto max-w-4xl px-4 py-16 sm:px-6 lg:px-8">
-          <p className="eyebrow">The Challenge</p>
+          <p className="eyebrow">{t("intro.eyebrow")}</p>
           <h1 className="mt-5 font-noto text-5xl leading-[0.98] text-navy sm:text-6xl">
-            English cannot stop at grammar.
+            {t("intro.title")}
           </h1>
+          <p className="mt-5 leading-7 text-ink/80">{t("intro.paragraph1")}</p>
           <p className="mt-5 leading-7 text-ink/80">
-            Latin America needs an English education that goes beyond content
-            and develops the ability to understand, interact and communicate
-            in real situations.
-          </p>
-          <p className="mt-5 leading-7 text-ink/80">
-            The 2025 EF English Proficiency Index (EF EPI) signals an
-            important concern. Among Latin American participants aged 18–20,
-            the Index reports a 57-point decline from 2015 to 2025, while
-            older age groups improved during that period. This trend requires
-            us to examine not only how much English is taught, but how it is
-            taught.{" "}
+            {t("intro.paragraph2")}{" "}
             <sup>
               <a className="text-gold-dark" href="#sources">
                 [1]
@@ -59,10 +72,7 @@ export default function ChallengePage() {
             ))}
           </div>
           <p className="mt-8 max-w-3xl text-xs leading-5 text-ink/60">
-            EF EPI uses results from adults who took the EF SET online. Its
-            sample is self-selected and is not necessarily representative of
-            all students or the full population. Present it as a relevant
-            comparative indicator, not as a census of the school system.{" "}
+            {t("metricsNote")}{" "}
             <sup>
               <a className="text-gold-dark" href="#sources">
                 [3]
@@ -74,23 +84,13 @@ export default function ChallengePage() {
 
       <section className="bg-paper">
         <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
-          <p className="eyebrow">Why the Gap Exists</p>
+          <p className="eyebrow">{t("gap.eyebrow")}</p>
           <h2 className="mt-5 max-w-3xl text-4xl leading-[1.05] text-navy sm:text-5xl">
-            The problem is not motivation. It is the teaching approach.
+            {t("gap.title")}
           </h2>
-          <p className="mt-5 max-w-3xl leading-7 text-ink/80">
-            In classroom practice, the curriculum may devote time to
-            vocabulary, written exercises, and grammar rules while leaving too
-            little space for students to produce English in guided and
-            meaningful ways. Without frequent opportunities to listen, speak,
-            formulate ideas, and receive feedback, English learning can become
-            passive knowledge rather than communicative ability.
-          </p>
+          <p className="mt-5 max-w-3xl leading-7 text-ink/80">{t("gap.paragraph1")}</p>
           <p className="mt-3 max-w-3xl leading-7 text-ink/80">
-            The Inter-American Dialogue has documented regional challenges
-            related to teachers&apos; language proficiency, pedagogical
-            preparation, and the systems that support and monitor classroom
-            practice.{" "}
+            {t("gap.paragraph2")}{" "}
             <sup>
               <a className="text-gold-dark" href="#sources">
                 [2]
@@ -99,7 +99,7 @@ export default function ChallengePage() {
           </p>
 
           <div className="mt-10 grid gap-6 md:grid-cols-3">
-            {challengeFactors.map((factor) => (
+            {factors.map((factor) => (
               <div className="rounded-md border border-navy/10 bg-cream p-6" key={factor.title}>
                 <p className="text-3xl text-gold-dark">{factor.number}</p>
                 <p className="mt-3 text-sm font-bold uppercase tracking-[0.2em] text-navy">
@@ -115,37 +115,25 @@ export default function ChallengePage() {
       <section className="bg-navy text-white">
         <div className="mx-auto max-w-4xl px-4 py-16 text-center sm:px-6 lg:px-8">
           <p className="eyebrow justify-center text-white before:bg-gold">
-            A Lesson from the Evolution of Language Teaching
+            {t("lesson.eyebrow")}
           </p>
-          <p className="mt-6 leading-7 text-white/80">
-            Language teaching evolved from the Grammar Translation Method,
-            focused on translation and rules, to approaches that strengthened
-            exposure and practice. Communicative Language Teaching (CLT)
-            ultimately placed interaction, meaning, and functional language
-            use at the centre of learning.
-          </p>
+          <p className="mt-6 leading-7 text-white/80">{t("lesson.paragraph")}</p>
           <blockquote className="mt-8 rounded-md border border-gold/30 bg-white/5 p-6 text-lg italic leading-8 text-white">
-            The goal is not to choose between grammar and communication. The
-            goal is to teach grammar so students can communicate more
-            effectively.
+            {t("lesson.quote")}
           </blockquote>
         </div>
       </section>
 
       <section className="bg-cream" id="solution">
         <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
-          <p className="eyebrow">The Solution</p>
+          <p className="eyebrow">{t("solution.eyebrow")}</p>
           <h2 className="mt-5 max-w-3xl text-4xl leading-[1.05] text-navy sm:text-5xl">
-            The CLEAR Pathway
+            {t("solution.title")}
           </h2>
-          <p className="mt-5 max-w-3xl leading-7 text-ink/80">
-            The CLEAR Pathway is a teacher-training system. It helps teachers
-            and institutions determine what to teach, how to organise each
-            class, and how to protect the time students need to speak.
-          </p>
+          <p className="mt-5 max-w-3xl leading-7 text-ink/80">{t("solution.description")}</p>
 
           <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-            {solutionFeatures.map((feature) => (
+            {features.map((feature) => (
               <div
                 className="rounded-md border border-navy/10 bg-paper p-6 shadow-lg shadow-navy/5"
                 key={feature.title}
@@ -162,13 +150,13 @@ export default function ChallengePage() {
 
       <section className="bg-paper">
         <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
-          <p className="eyebrow">Six Instructional Strands</p>
+          <p className="eyebrow">{t("strands.eyebrow")}</p>
           <h2 className="mt-5 max-w-3xl text-4xl leading-[1.05] text-navy sm:text-5xl">
-            Every class draws on a complete, research-informed foundation
+            {t("strands.title")}
           </h2>
 
           <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {instructionalStrands.map((strand) => (
+            {strands.map((strand) => (
               <div className="rounded-md border border-navy/10 bg-cream p-6" key={strand.title}>
                 <p className="text-2xl text-navy">{strand.title}</p>
                 <p className="mt-2 text-sm leading-6 text-ink/80">{strand.description}</p>
@@ -177,16 +165,16 @@ export default function ChallengePage() {
           </div>
 
           <Button className="mt-12" href="/courses">
-            Explore the Training Programs
+            {t("strands.cta")}
           </Button>
         </div>
       </section>
 
       <section className="bg-cream px-4 py-10 sm:px-6" id="sources">
         <div className="mx-auto max-w-4xl text-xs leading-6 text-ink/60">
-          <p className="font-bold uppercase tracking-[0.2em] text-navy">Sources</p>
+          <p className="font-bold uppercase tracking-[0.2em] text-navy">{t("sources.title")}</p>
           <p className="mt-3">
-            [1] EF Education First. EF English Proficiency Index 2025.{" "}
+            {t("sources.item1")}{" "}
             <a
               className="text-gold-dark underline"
               href="https://www.ef.com/assetscdn/WIBIwq6RdJvcD9bc8RMd/cefcom-epi-site/reports/2025/ef-epi-2025-english.pdf"
@@ -197,8 +185,7 @@ export default function ChallengePage() {
             </a>
           </p>
           <p className="mt-2">
-            [2] Inter-American Dialogue. Work in Progress: English Teaching
-            and Teachers in Latin America (2019).{" "}
+            {t("sources.item2")}{" "}
             <a
               className="text-gold-dark underline"
               href="https://thedialogue.org/analysis/work-in-progress-english-teaching-and-teachers-in-latin-america"
@@ -209,8 +196,7 @@ export default function ChallengePage() {
             </a>
           </p>
           <p className="mt-2">
-            [3] EF Education First. About EF EPI: Methodology and Sampling
-            Biases.{" "}
+            {t("sources.item3")}{" "}
             <a
               className="text-gold-dark underline"
               href="https://www.ef.edu/epi/about-epi/"
