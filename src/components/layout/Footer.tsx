@@ -1,11 +1,12 @@
-import Link from "next/link";
+import { useTranslations } from "next-intl";
 import { navItems } from "@/data/home";
+import { Link } from "@/i18n/navigation";
 import { BrandMark } from "./BrandMark";
 
 const socialLinks = [
   {
     label: "Instagram",
-    href: "https://www.instagram.com/",
+    href: "https://www.instagram.com/clear_pathway",
     icon: InstagramIcon,
   },
   {
@@ -15,9 +16,9 @@ const socialLinks = [
   },
 ];
 
-const supportLinks = [{ label: "Frequently Asked Questions", href: "/faq" }];
+const supportLinks = [{ key: "faq", href: "/faq" }] as const;
 
-const legalLinks = [{ label: "Privacy Policy", href: "/privacy-policy" }];
+const legalLinks = [{ key: "privacyPolicy", href: "/privacy-policy" }] as const;
 
 function InstagramIcon() {
   return (
@@ -89,14 +90,16 @@ function LinkedInIcon() {
 }
 
 export function Footer() {
+  const t = useTranslations("nav");
+  const tFooter = useTranslations("footer");
+
   return (
     <footer className="bg-navy text-white">
       <div className="mx-auto grid max-w-7xl gap-10 px-4 py-16 sm:px-6 lg:grid-cols-[1.3fr_1fr_1fr_1fr] lg:px-8 lg:py-20">
         <div>
           <BrandMark />
           <p className="mt-5 max-w-xs text-sm leading-6 text-white/70">
-            A clear, practical and research-informed pathway for stronger ESL
-            education.
+            {tFooter("tagline")}
           </p>
           <div className="mt-6 flex items-center gap-3">
             {socialLinks.map(({ label, href, icon: Icon }) => (
@@ -115,33 +118,39 @@ export function Footer() {
         </div>
 
         <div>
-          <p className="text-xs font-bold uppercase tracking-[0.25em] text-gold">Explore</p>
+          <p className="text-xs font-bold uppercase tracking-[0.25em] text-gold">
+            {tFooter("explore")}
+          </p>
           <nav aria-label="Explore" className="mt-5 flex flex-col gap-3 text-sm font-bold text-white/75">
             {navItems.map((item) => (
               <Link className="transition hover:text-gold" href={item.href} key={item.href}>
-                {item.label}
+                {t(item.key)}
               </Link>
             ))}
           </nav>
         </div>
 
         <div>
-          <p className="text-xs font-bold uppercase tracking-[0.25em] text-gold">Support</p>
+          <p className="text-xs font-bold uppercase tracking-[0.25em] text-gold">
+            {tFooter("support")}
+          </p>
           <nav aria-label="Support" className="mt-5 flex flex-col gap-3 text-sm font-bold text-white/75">
             {supportLinks.map((item) => (
-              <Link className="transition hover:text-gold" href={item.href} key={item.href}>
-                {item.label}
+              <Link className="transition hover:text-gold" href={item.href} key={item.key}>
+                {tFooter(item.key)}
               </Link>
             ))}
           </nav>
         </div>
 
         <div>
-          <p className="text-xs font-bold uppercase tracking-[0.25em] text-gold">Legal</p>
+          <p className="text-xs font-bold uppercase tracking-[0.25em] text-gold">
+            {tFooter("legal")}
+          </p>
           <nav aria-label="Legal" className="mt-5 flex flex-col gap-3 text-sm font-bold text-white/75">
             {legalLinks.map((item) => (
-              <Link className="transition hover:text-gold" href={item.href} key={item.href}>
-                {item.label}
+              <Link className="transition hover:text-gold" href={item.href} key={item.key}>
+                {tFooter(item.key)}
               </Link>
             ))}
           </nav>
@@ -150,7 +159,7 @@ export function Footer() {
 
       <div className="border-t border-white/10 px-4 py-6 sm:px-6 lg:px-8">
         <p className="mx-auto max-w-7xl text-center text-xs text-white/50">
-          © {new Date().getFullYear()} The CLEAR Pathway. All rights reserved.
+          © {new Date().getFullYear()} The CLEAR Pathway. {tFooter("rights")}
         </p>
       </div>
     </footer>

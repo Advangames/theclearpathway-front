@@ -1,0 +1,476 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "challenge": "The Challenge",
+    "courses": "Courses",
+    "languagePrograms": "Language Programs",
+    "getStarted": "Get Started",
+    "language": "Language"
+  },
+  "footer": {
+    "tagline": "A clear, practical and research-informed pathway for stronger ESL education.",
+    "explore": "Explore",
+    "support": "Support",
+    "legal": "Legal",
+    "faq": "Frequently Asked Questions",
+    "privacyPolicy": "Privacy Policy",
+    "rights": "All rights reserved."
+  },
+  "layout": {
+    "description": "A practical, research-informed pathway for ESL teacher development and communicative classroom results."
+  },
+  "metrics": {
+    "items": [
+      {
+        "value": "-57 points",
+        "label": "Decline among Latin American participants aged 18\u201320, from 2015 to 2025.",
+        "source": "EF EPI 2025"
+      },
+      {
+        "value": "458/800",
+        "label": "Venezuela's speaking score in EF EPI 2025.",
+        "source": ""
+      },
+      {
+        "value": "Only 1",
+        "label": "country in the region reached the High Proficiency band in Latin America in EF EPI 2025.",
+        "source": ""
+      }
+    ]
+  },
+  "pillars": {
+    "items": [
+      {
+        "title": "Teacher Development",
+        "description": "Practical tools for confident, purpose-led instruction."
+      },
+      {
+        "title": "Stronger Communities",
+        "description": "Shared language, better access and more participation."
+      },
+      {
+        "title": "Real Opportunities",
+        "description": "English as a bridge to education, work and mobility."
+      }
+    ]
+  },
+  "home": {
+    "meta": {
+      "title": "Raising the Standard of ESL Education",
+      "description": "The CLEAR Pathway helps educators teach English with purpose, structure and real communicative results."
+    },
+    "hero": {
+      "eyebrow": "The CLEAR Pathway",
+      "name": "Ana Cristina Volante",
+      "titleStart": "I am",
+      "titleEnd": ", an ESL Academic Director",
+      "subtitle": "Certified English\u2013Spanish Translator, and founder of An Education Center (AEC)",
+      "description": "My work brings together classroom experience, academic leadership, and teacher training so English can be taught with purpose, structure, and real communicative outcomes.",
+      "ctaPrimary": "Explore the Methodology",
+      "ctaSecondary": "About Ana Cristina"
+    },
+    "about": {
+      "eyebrow": "About Ana Cristina Volante",
+      "title": "A professional journey built in the classroom",
+      "paragraph1": "For more than ten years, I have worked with children from different schools through extracurricular English classes at An Education Center (AEC).",
+      "paragraph2": "This experience revealed a recurring reality: many students study English for years but do not always develop the tools, confidence, or opportunities they need to communicate orally.",
+      "paragraph3": "With more than eight years of professional experience in language education, academic leadership, and institutional management, I have worked in ESL program design, teacher training, curriculum development, academic coordination, and quality assurance.",
+      "cta": "Get to Know My Journey",
+      "quote": "I believe in educators and in the transformative power of a clear, practical approach to teaching English.",
+      "quoteName": "Ana Cristina Volante",
+      "quoteRole": "Founder, AEC",
+      "translationTitle": "Certified Translation Experience",
+      "translationText": "I am also a Certified English\u2013Spanish Translator with legal, academic, and corporate experience. This strengthens my view of language as a tool for understanding, self-expression, and connection in real, multicultural contexts.",
+      "toolTitle": "English as a Tool for Communication",
+      "toolText": "Teaching English should not be limited to memorising grammar rules. It should prepare students to use the language with clarity, confidence, and purpose."
+    },
+    "challenge": {
+      "eyebrow": "The Challenge",
+      "title": "The English Proficiency Gap in Latin America",
+      "description": "Latin America needs an English education that goes beyond content and develops the ability to understand, interact, and communicate in real situations.",
+      "cta": "See the Evidence"
+    },
+    "pathway": {
+      "eyebrow": "The CLEAR Pathway",
+      "title": "A Progressive Learning Journey",
+      "description": "Three specialised courses designed to give educators the tools, structure and confidence to teach English more effectively.",
+      "cta": "Explore All Courses",
+      "learnMore": "Learn More"
+    },
+    "resources": {
+      "tagline": "Let's raise the standard together",
+      "cta": "Start Your Journey"
+    }
+  },
+  "about": {
+    "meta": {
+      "title": "About Ana Cristina Volante",
+      "description": "I am Ana Cristina Volante, an ESL Academic Director, Certified English\u2013Spanish Translator, and the founder of An Education Center (AEC)."
+    },
+    "hero": {
+      "eyebrow": "About Ana Cristina Volante",
+      "title": "Raising the standard of English education begins with a clear teaching framework.",
+      "description": "I am Ana Cristina Volante, an ESL Academic Director, Certified English\u2013Spanish Translator, and the founder of An Education Center (AEC). My work brings together classroom experience, academic leadership, and teacher training so English can be taught with purpose, structure, and real communicative outcomes."
+    },
+    "journey": {
+      "eyebrow": "My Story",
+      "title": "A professional journey built in the classroom",
+      "paragraph1": "For more than ten years, I have worked with children from different schools through extracurricular English classes at An Education Center (AEC).",
+      "paragraph2": "This experience revealed a recurring reality: many students study English for years but do not always develop the tools, confidence, or opportunities they need to communicate orally.",
+      "paragraph3": "With more than eight years of professional experience in language education, academic leadership, and institutional management, I have worked in ESL program design, teacher training, curriculum development, academic coordination, and quality assurance.",
+      "quote": "I believe in educators and in the transformative power of a clear, practical approach to teaching English.",
+      "quoteName": "Ana Cristina Volante",
+      "quoteRole": "Founder, AEC",
+      "translationTitle": "Certified Translation Experience",
+      "translationText": "I am also a Certified English\u2013Spanish Translator with legal, academic, and corporate experience. This strengthens my view of language as a tool for understanding, self-expression, and connection in real, multicultural contexts.",
+      "toolTitle": "English as a Tool for Communication",
+      "toolText": "Teaching English should not be limited to memorising grammar rules. It should prepare students to use the language with clarity, confidence, and purpose."
+    },
+    "closing": {
+      "eyebrow": "The Reason Behind The CLEAR Pathway",
+      "description": "My experience at AEC showed a gap between the time students spend studying English and their ability to communicate. That is why I created The CLEAR Pathway: a proposal to raise the standard of ESL education in Venezuela and Latin America through clear, practical tools for teachers, institutions, and educational entrepreneurs.",
+      "cta": "Explore the Problem We Are Solving"
+    }
+  },
+  "challenge": {
+    "meta": {
+      "title": "The Challenge & The Solution",
+      "description": "Latin America needs an English education that goes beyond content and develops the ability to understand, interact and communicate in real situations."
+    },
+    "intro": {
+      "eyebrow": "The Challenge",
+      "title": "English cannot stop at grammar.",
+      "paragraph1": "Latin America needs an English education that goes beyond content and develops the ability to understand, interact, and communicate in real situations.",
+      "paragraph2": "The 2025 EF English Proficiency Index (EF EPI) signals an important concern. Among Latin American participants aged 18\u201320, the Index reports a 57-point decline from 2015 to 2025, while older age groups improved during that period. This trend requires us to examine not only how much English is taught, but how it is taught."
+    },
+    "metricsNote": "EF EPI uses results from adults who took the EF SET online. Its sample is self-selected and is not necessarily representative of all students or the full population. It should be read as a relevant comparative indicator, not as a census of the school system.",
+    "gap": {
+      "eyebrow": "Why the Gap Exists",
+      "title": "The problem is not motivation. It is the teaching approach.",
+      "paragraph1": "In classroom practice, the curriculum may devote time to vocabulary, written exercises, and grammar rules while leaving too little space for students to produce English in guided and meaningful ways. Without frequent opportunities to listen, speak, formulate ideas, and receive feedback, English learning can become passive knowledge rather than communicative ability.",
+      "paragraph2": "The Inter-American Dialogue has documented regional challenges related to teachers' language proficiency, pedagogical preparation, and the systems that support and monitor classroom practice."
+    },
+    "factors": {
+      "items": [
+        {
+          "number": "1",
+          "title": "Oral Production",
+          "description": "Too little time for guided speaking, interaction, and active English use in class."
+        },
+        {
+          "number": "2",
+          "title": "Teacher Preparation",
+          "description": "Uneven preparation in language proficiency, pedagogy, and ongoing support."
+        },
+        {
+          "number": "3",
+          "title": "Shared Structure",
+          "description": "A lack of guides and criteria that connect objectives, practice, and outcomes."
+        }
+      ]
+    },
+    "lesson": {
+      "eyebrow": "A Lesson from the Evolution of Language Teaching",
+      "paragraph": "Language teaching evolved from the Grammar Translation Method, which focused on translation and rules, to approaches that strengthened exposure and practice. Communicative Language Teaching (CLT) ultimately placed interaction, meaning, and functional language use at the centre of learning.",
+      "quote": "The goal is not to choose between grammar and communication. The goal is to teach grammar so students can communicate more effectively."
+    },
+    "solution": {
+      "eyebrow": "The Solution",
+      "title": "The CLEAR Pathway",
+      "description": "The CLEAR Pathway is a teacher-training system. It helps teachers and institutions determine what to teach, how to organise each class, and how to protect the time students need to speak.",
+      "features": [
+        {
+          "title": "Structured",
+          "description": "A timed framework using Presentation, Practice, Production (PPP) and research-informed reading instruction. It connects objectives, practice, and production."
+        },
+        {
+          "title": "Science-Based",
+          "description": "Integrates linguistics, education, and cognitive research for more intentional teaching decisions."
+        },
+        {
+          "title": "Speaking-First",
+          "description": "A target of 18\u201320 minutes of oral production in every 60-minute class."
+        },
+        {
+          "title": "Teacher-Ready",
+          "description": "Guides and sequences that are usable from day one; less improvisation and greater consistency."
+        }
+      ]
+    },
+    "strands": {
+      "eyebrow": "Six Instructional Strands",
+      "title": "Every class draws on a complete, research-informed foundation",
+      "cta": "Explore the Training Programs",
+      "items": [
+        {
+          "title": "Science of Reading",
+          "description": "Phonemic awareness, phonics, decoding, fluency, vocabulary, and comprehension."
+        },
+        {
+          "title": "Read-Aloud / Guided Reading",
+          "description": "High-quality literature for comprehension, vocabulary, and fluency."
+        },
+        {
+          "title": "Writing",
+          "description": "Teacher modelling, guided practice, and independent writing."
+        },
+        {
+          "title": "Grammar with PPP",
+          "description": "Presentation, practice, and production, including concept and instruction checks."
+        },
+        {
+          "title": "Listening & Speaking",
+          "description": "Listening comprehension and oral expression integrated systematically."
+        },
+        {
+          "title": "Communicative Language Teaching",
+          "description": "Real topics, interaction, and authentic English use."
+        }
+      ]
+    },
+    "sources": {
+      "title": "Sources",
+      "item1": "[1] EF Education First. EF English Proficiency Index 2025.",
+      "item2": "[2] Inter-American Dialogue. Work in Progress: English Teaching and Teachers in Latin America (2019).",
+      "item3": "[3] EF Education First. About EF EPI: Methodology and Sampling Biases."
+    }
+  },
+  "courses": {
+    "meta": {
+      "title": "Courses",
+      "description": "The CLEAR Pathway brings together three courses for teachers and educational entrepreneurs who want to teach English with greater clarity, structure, and communicative purpose."
+    },
+    "hero": {
+      "eyebrow": "Courses and Resources",
+      "title": "Turn a strong teaching framework into English classes that truly work.",
+      "description": "The CLEAR Pathway brings together three courses for teachers and educational entrepreneurs who want to teach English with greater clarity, structure, and communicative purpose. Each course develops an essential dimension of an ESL class: grammar through a clear sequence \u2192 reading through explicit instruction \u2192 authentic communication in the classroom."
+    },
+    "learnMore": "Learn More",
+    "guidesSection": {
+      "eyebrow": "Courses and Guides",
+      "title": "Two distinct elements",
+      "description": "The three courses above are the courses that will be presented in the offer. The following guides are supporting pedagogical materials: they organise the content and resources that underpin the training, but they do not replace or rename the courses."
+    },
+    "guides": {
+      "items": [
+        {
+          "title": "Theoretical & Methodological Guide",
+          "description": "Explains the evolution of language teaching and the pedagogical foundations that support The CLEAR Pathway."
+        },
+        {
+          "title": "Grammar Guide",
+          "description": "Organises grammar structures and resources for teaching them visually, orally, and communicatively."
+        },
+        {
+          "title": "Class Structure Guide",
+          "description": "Presents practical sequences and routines for structuring classes and encouraging oral participation."
+        }
+      ]
+    },
+    "complementary": {
+      "eyebrow": "Complementary Resource",
+      "title": "Make what you need to teach visible.",
+      "description": "The Infographic Guide gathers grammar topics in visual formats that are ready to project, explain, or consult in class. It is a complementary resource that supports Grammar through PPP Model in particular."
+    },
+    "recommendations": {
+      "eyebrow": "Which Course Is Right for You?",
+      "title": "Find your path",
+      "items": [
+        {
+          "need": "Teach and practise grammar through a clear, visual, and oral sequence.",
+          "recommendation": "Grammar through PPP Model"
+        },
+        {
+          "need": "Develop reading through explicit, structured instruction.",
+          "recommendation": "Reading through the Science of Reading"
+        },
+        {
+          "need": "Create activities where students interact and use English for a real purpose.",
+          "recommendation": "Communicative Language Teaching"
+        },
+        {
+          "need": "Build a complete, consistent program for an institution or educational venture.",
+          "recommendation": "Full three-course pathway"
+        }
+      ]
+    },
+    "closing": {
+      "title": "You do not need to choose between structure and communication. You can teach with both.",
+      "description": "The CLEAR Pathway provides a practical route for understanding the framework, transforming grammar instruction, and structuring classes where students use English with greater confidence.",
+      "ctaPrimary": "Explore the Complete Pathway",
+      "ctaSecondary": "Request Information for Your Institution"
+    },
+    "items": {
+      "grammarPpp": {
+        "eyebrow": "Course 1",
+        "title": "Grammar through PPP Model",
+        "corePromise": "Teach grammar through a sequence that leads from understanding to communicative use.",
+        "summary": "This course turns grammar into a communication tool. Through the PPP model \u2014 Presentation, Practice, Production \u2014 teachers learn how to introduce a structure clearly, guide practice, and create a real opportunity for students to use it while speaking.",
+        "includes": "The PPP model; oral production before writing; visual support; gestures; realia; guided repetition; games; flashcards; and respectful correction.",
+        "byTheEnd": "Teachers can explain structures clearly, move from understanding to production, and design accessible, communicative oral practice.",
+        "idealFor": "Primary English teachers, instructors seeking more communicative classes, and entrepreneurs who need a practical foundation for high-quality English instruction.",
+        "ctaLabel": "I Want to Teach Grammar through the PPP Model"
+      },
+      "readingScience": {
+        "eyebrow": "Course 2",
+        "title": "Reading through the Science of Reading",
+        "corePromise": "Develop reading through explicit, structured instruction adapted for ESL learners.",
+        "summary": "This course brings Science of Reading principles into the ESL classroom. It helps teachers organise a progression that connects sounds, letters, decoding, fluency, vocabulary, and comprehension so reading is taught intentionally and accessibly.",
+        "includes": "Phonemic awareness; phonics; decoding; decodable reading; fluency; vocabulary; comprehension; and connections with writing.",
+        "byTheEnd": "Teachers can plan structured reading experiences, adapt support for multilingual learners, and connect reading with oral and written language.",
+        "idealFor": "Primary English teachers, academic coordinators, and institutions that want to strengthen a solid reading foundation within an ESL program.",
+        "ctaLabel": "I Want to Teach Reading through the Science of Reading"
+      },
+      "clt": {
+        "eyebrow": "Course 3",
+        "title": "Communicative Language Teaching",
+        "corePromise": "Design classes where students use English to interact and express themselves.",
+        "summary": "This course places communication at the centre of the class. Teachers learn to design themes, tasks, and routines where students use English for a purpose: to converse, describe, interview, solve problems, role-play, and present ideas.",
+        "includes": "Listening and speaking routines; pair work; information-gap games; interviews; role-plays; presentations; and activities for large classes.",
+        "goldenRule": "Reserve 18\u201320 minutes of oral production in every 60-minute class through conversations, interviews, descriptions, role-plays, information-gap games, and short presentations.",
+        "largeClassActivities": "The course includes large-class activities such as Find Someone Who, Guess Who, Hot Seat, Two Truths and a Lie, Story Chain, and Think-Pair-Share. Their purpose is to let many students speak simultaneously instead of waiting for isolated turns.",
+        "idealFor": "Teachers who want to increase oral participation, coordinators seeking more dynamic classes, and educational entrepreneurs who want to offer communication-centred ESL experiences.",
+        "ctaLabel": "I Want to Teach with Communicative Language Teaching"
+      }
+    }
+  },
+  "courseDetail": {
+    "backLink": "\u2190 Back to All Courses",
+    "includes": "Includes",
+    "byTheEnd": "By the End",
+    "goldenRule": "The Golden Rule",
+    "idealFor": "Ideal for: "
+  },
+  "faq": {
+    "meta": {
+      "title": "Frequently Asked Questions",
+      "description": "Answers to common questions about Ana Cristina Volante, The CLEAR Pathway, and its courses."
+    },
+    "eyebrow": "Support",
+    "title": "Frequently Asked Questions",
+    "items": [
+      {
+        "question": "What is The CLEAR Pathway?",
+        "answer": "The CLEAR Pathway is a teacher-training system created by Ana Cristina Volante. It helps teachers and institutions determine what to teach, how to organise each class, and how to protect the time students need to speak."
+      },
+      {
+        "question": "Who are the courses designed for?",
+        "answer": "The courses are designed for primary English teachers, academic coordinators, instructors seeking more communicative classes, and educational entrepreneurs who want a practical foundation for high-quality English instruction."
+      },
+      {
+        "question": "How many courses are there, and what do they cover?",
+        "answer": "There are three courses: Grammar through PPP Model, Reading through the Science of Reading, and Communicative Language Teaching. Each develops an essential dimension of an ESL class, from grammar to reading to authentic communication."
+      },
+      {
+        "question": "Are there supporting materials besides the courses?",
+        "answer": "Yes. The Theoretical & Methodological Guide, the Grammar Guide, and the Class Structure Guide are supporting pedagogical materials that organise the content and resources underpinning the training."
+      },
+      {
+        "question": "When will pricing, schedules, and enrolment details be available?",
+        "answer": "Delivery format, duration, start dates, pricing, and enrolment details are being finalised. Please check back soon or reach out directly for the latest information."
+      }
+    ]
+  },
+  "privacyPolicy": {
+    "meta": {
+      "title": "Privacy Policy",
+      "description": "Privacy Policy for The CLEAR Pathway."
+    },
+    "eyebrow": "Legal",
+    "title": "Privacy Policy",
+    "paragraph1": "Our Privacy Policy is being finalised and will be published before this website begins collecting personal information through forms, registrations, or purchases. It will explain what information we collect, how it is used, and the choices available to you.",
+    "paragraph2": "If you have questions in the meantime, please reach out to us directly."
+  },
+  "languagePrograms": {
+    "meta": {
+      "title": "Language Programs",
+      "description": "Personalized English and Spanish programs for professionals, teams, businesses, and international residents."
+    },
+    "hero": {
+      "eyebrow": "Language Programs",
+      "title": "English & Spanish for Work and Real Life",
+      "description": "Personalized language programs for professionals, teams, businesses, and international residents.",
+      "formats": "Online or In Person \u00b7 One-to-One or Group \u00b7 English or Spanish",
+      "tagline": "Communicate with clarity. Connect with confidence."
+    },
+    "audience": {
+      "eyebrow": "Who the Programs Are For",
+      "title": "Language that works where life happens.",
+      "description": "Language Programs offers English and Spanish training tailored to the real communication needs of individuals, teams, and organizations. Each program is designed around the learner's context, goals, and level\u2014so every session has a clear purpose and practical value.",
+      "groups": [
+        {
+          "number": "01",
+          "title": "Professionals",
+          "description": "For people who want to communicate more confidently in meetings, emails, presentations, travel, and everyday professional interactions."
+        },
+        {
+          "number": "02",
+          "title": "Teams & Businesses",
+          "description": "For organizations that need a tailored program for employees, customer-facing teams, internal collaboration, or professional development."
+        },
+        {
+          "number": "03",
+          "title": "International Residents",
+          "description": "For people building confidence in English or Spanish as they work, connect, and manage daily life in a new environment."
+        }
+      ]
+    },
+    "format": {
+      "eyebrow": "Flexible Delivery",
+      "title": "Built around people, goals, and context.",
+      "description": "Programs can be delivered in the format that best supports the learner or organization. The same practical, communication-focused approach applies whether learning happens individually, with a team, online, or in person.",
+      "options": [
+        {
+          "title": "Online or In Person",
+          "description": "Choose online sessions for flexibility across locations, or in-person sessions for teams and learners who benefit from a shared physical space."
+        },
+        {
+          "title": "One-to-One or Group",
+          "description": "Choose individual coaching for focused personal goals, or group programs that build shared language and collaboration across a team."
+        },
+        {
+          "title": "English or Spanish",
+          "description": "Select the language that will help learners communicate more effectively in their current professional, social, or international context."
+        },
+        {
+          "title": "Personalized to the Need",
+          "description": "Programs can prioritize workplace communication, customer interaction, professional vocabulary, daily life, or a combination of goals."
+        }
+      ]
+    },
+    "outcomes": {
+      "eyebrow": "What Learners Gain",
+      "title": "Communication is the goal\u2014not just completing a lesson.",
+      "description": "Learners build the language they need to understand, participate, and express themselves with greater clarity and confidence in real situations.",
+      "features": [
+        {
+          "title": "Real-World Communication",
+          "description": "Build confidence for the conversations that happen in meetings, customer interactions, travel, daily life, and cross-cultural settings."
+        },
+        {
+          "title": "Professional Vocabulary",
+          "description": "Develop relevant vocabulary, phrases, and communication strategies connected to the learner's role, industry, and goals."
+        },
+        {
+          "title": "Goal-Focused Learning",
+          "description": "Work toward defined outcomes through practical activities, targeted feedback, and meaningful progress over time."
+        }
+      ]
+    },
+    "closing": {
+      "eyebrow": "Get Started",
+      "title": "Give your people the language to connect, contribute, and grow.",
+      "description": "Tell us about your team, your learners, and the communication goals that matter most. We will help you identify the format and focus that fit your needs."
+    }
+  },
+  "notFound": {
+    "meta": {
+      "title": "Page Not Found"
+    },
+    "eyebrow": "404",
+    "title": "Page not found",
+    "description": "The page you are looking for is not available yet.",
+    "cta": "Back Home"
+  }
+}

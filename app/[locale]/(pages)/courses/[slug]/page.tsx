@@ -1,11 +1,13 @@
 import type { Metadata } from "next";
-import Link from "next/link";
+import { getTranslations, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { Button } from "@/components/ui";
 import { courses } from "@/data/courses";
+import { localeAlternates } from "@/i18n/alternates";
+import { Link } from "@/i18n/navigation";
 
 type CoursePageProps = {
-  params: Promise<{ slug: string }>;
+  params: Promise<{ locale: string; slug: string }>;
 };
 
 function getCourse(slug: string) {
@@ -17,29 +19,40 @@ export function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }: CoursePageProps): Promise<Metadata> {
-  const { slug } = await params;
+  const { locale, slug } = await params;
   const course = getCourse(slug);
 
   if (!course) {
     return {};
   }
 
+  const t = await getTranslations({ locale, namespace: `courses.items.${course.messageKey}` });
+
   return {
-    title: course.title,
-    description: course.corePromise,
+    title: t("title"),
+    description: t("corePromise"),
     alternates: {
-      canonical: `/courses/${course.slug}`,
+      canonical: `/${locale}/courses/${course.slug}`,
+      languages: localeAlternates(`/courses/${course.slug}`),
     },
   };
 }
 
 export default async function CourseDetailPage({ params }: CoursePageProps) {
-  const { slug } = await params;
+  const { locale, slug } = await params;
   const course = getCourse(slug);
 
   if (!course) {
     notFound();
   }
+
+  setRequestLocale(locale);
+  const t = await getTranslations(`courses.items.${course.messageKey}`);
+  const tDetail = await getTranslations("courseDetail");
+  const goldenRule = t.has("goldenRule") ? t("goldenRule") : null;
+  const largeClassActivities = t.has("largeClassActivities")
+    ? t("largeClassActivities")
+    : null;
 
   return (
     <div>
@@ -49,7 +62,7 @@ export default async function CourseDetailPage({ params }: CoursePageProps) {
             className="text-sm font-bold text-gold-dark transition hover:text-navy"
             href="/courses"
           >
-            ← Back to All Courses
+            {tDetail("backLink")}
           </Link>
 
           <p
@@ -57,12 +70,12 @@ export default async function CourseDetailPage({ params }: CoursePageProps) {
               course.tone === "coral" ? "text-coral" : "text-gold-dark"
             }`}
           >
-            {course.eyebrow} — {course.title}
+            {t("eyebrow")} — {t("title")}
           </p>
           <h1 className="mt-4 text-4xl leading-[1.05] text-navy sm:text-5xl">
-            {course.corePromise}
+            {t("corePromise")}
           </h1>
-          <p className="mt-5 leading-7 text-ink/80">{course.summary}</p>
+          <p className="mt-5 leading-7 text-ink/80">{t("summary")}</p>
         </div>
       </section>
 
@@ -70,30 +83,32 @@ export default async function CourseDetailPage({ params }: CoursePageProps) {
         <div className="mx-auto max-w-4xl px-4 py-14 sm:px-6 lg:px-8">
           <div className="grid gap-6 sm:grid-cols-2">
             <div className="rounded-md border border-navy/10 bg-paper p-6 shadow-lg shadow-navy/5">
-              <p className="text-sm font-bold uppercase tracking-[0.2em] text-navy">Includes</p>
-              <p className="mt-2 text-sm leading-6 text-ink/80">{course.includes}</p>
+              <p className="text-sm font-bold uppercase tracking-[0.2em] text-navy">
+                {tDetail("includes")}
+              </p>
+              <p className="mt-2 text-sm leading-6 text-ink/80">{t("includes")}</p>
             </div>
-            {course.byTheEnd && (
+            {t.has("byTheEnd") && (
               <div className="rounded-md border border-navy/10 bg-paper p-6 shadow-lg shadow-navy/5">
                 <p className="text-sm font-bold uppercase tracking-[0.2em] text-navy">
-                  By the End
+                  {tDetail("byTheEnd")}
                 </p>
-                <p className="mt-2 text-sm leading-6 text-ink/80">{course.byTheEnd}</p>
+                <p className="mt-2 text-sm leading-6 text-ink/80">{t("byTheEnd")}</p>
               </div>
             )}
           </div>
 
-          {course.goldenRule && (
+          {goldenRule && (
             <div className="mt-8 rounded-md border border-gold/40 bg-gold/10 p-6">
               <p className="text-sm font-bold uppercase tracking-[0.2em] text-gold-dark">
-                The Golden Rule
+                {tDetail("goldenRule")}
               </p>
-              <p className="mt-2 text-sm leading-6 text-ink/80">{course.goldenRule}</p>
+              <p className="mt-2 text-sm leading-6 text-ink/80">{goldenRule}</p>
             </div>
           )}
 
-          {course.largeClassActivities && (
-            <p className="mt-5 text-sm leading-6 text-ink/70">{course.largeClassActivities}</p>
+          {largeClassActivities && (
+            <p className="mt-5 text-sm leading-6 text-ink/70">{largeClassActivities}</p>
           )}
         </div>
       </section>
@@ -101,12 +116,12 @@ export default async function CourseDetailPage({ params }: CoursePageProps) {
       <section className="bg-paper">
         <div className="mx-auto max-w-4xl px-4 py-16 sm:px-6 lg:px-8">
           <p className="text-sm leading-6 text-ink/80">
-            <span className="font-bold text-navy">Ideal for: </span>
-            {course.idealFor}
+            <span className="font-bold text-navy">{tDetail("idealFor")}</span>
+            {t("idealFor")}
           </p>
 
           <Button className="mt-8" href="/courses#resources">
-            {course.ctaLabel}
+            {t("ctaLabel")}
           </Button>
         </div>
       </section>

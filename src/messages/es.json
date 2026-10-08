@@ -1,0 +1,476 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "about": "Sobre M\u00ed",
+    "challenge": "El Desaf\u00edo",
+    "courses": "Cursos",
+    "languagePrograms": "Programas de Idiomas",
+    "getStarted": "Comenzar",
+    "language": "Idioma"
+  },
+  "footer": {
+    "tagline": "Un camino claro, pr\u00e1ctico y fundamentado en investigaci\u00f3n para fortalecer la ense\u00f1anza del ingl\u00e9s.",
+    "explore": "Explorar",
+    "support": "Soporte",
+    "legal": "Legal",
+    "faq": "Preguntas Frecuentes",
+    "privacyPolicy": "Pol\u00edtica de Privacidad",
+    "rights": "Todos los derechos reservados."
+  },
+  "layout": {
+    "description": "Un camino pr\u00e1ctico y fundamentado en investigaci\u00f3n para la formaci\u00f3n docente de ingl\u00e9s y resultados comunicativos reales en el aula."
+  },
+  "metrics": {
+    "items": [
+      {
+        "value": "-57 puntos",
+        "label": "Disminuci\u00f3n entre los participantes latinoamericanos de 18 a 20 a\u00f1os, de 2015 a 2025.",
+        "source": "EF EPI 2025"
+      },
+      {
+        "value": "458/800",
+        "label": "Puntaje de speaking de Venezuela en el EF EPI 2025.",
+        "source": ""
+      },
+      {
+        "value": "Solo 1",
+        "label": "pa\u00eds de la regi\u00f3n alcanz\u00f3 la banda de Alta Competencia en Latinoam\u00e9rica en el EF EPI 2025.",
+        "source": ""
+      }
+    ]
+  },
+  "pillars": {
+    "items": [
+      {
+        "title": "Desarrollo Docente",
+        "description": "Herramientas pr\u00e1cticas para una ense\u00f1anza segura y con prop\u00f3sito."
+      },
+      {
+        "title": "Comunidades M\u00e1s Fuertes",
+        "description": "Idioma compartido, mejor acceso y m\u00e1s participaci\u00f3n."
+      },
+      {
+        "title": "Oportunidades Reales",
+        "description": "El ingl\u00e9s como puente hacia la educaci\u00f3n, el trabajo y la movilidad."
+      }
+    ]
+  },
+  "home": {
+    "meta": {
+      "title": "Elevando el Est\u00e1ndar de la Educaci\u00f3n en Ingl\u00e9s",
+      "description": "The CLEAR Pathway ayuda a los docentes a ense\u00f1ar ingl\u00e9s con prop\u00f3sito, estructura y resultados comunicativos reales."
+    },
+    "hero": {
+      "eyebrow": "The CLEAR Pathway",
+      "name": "Ana Cristina Volante",
+      "titleStart": "Soy",
+      "titleEnd": ", Directora Acad\u00e9mica de ESL",
+      "subtitle": "Traductora Certificada de Ingl\u00e9s\u2013Espa\u00f1ol y fundadora de An Education Center (AEC)",
+      "description": "Mi trabajo re\u00fane experiencia en el aula, liderazgo acad\u00e9mico y formaci\u00f3n docente para que el ingl\u00e9s se ense\u00f1e con prop\u00f3sito, estructura y resultados comunicativos reales.",
+      "ctaPrimary": "Explorar la Metodolog\u00eda",
+      "ctaSecondary": "Sobre Ana Cristina"
+    },
+    "about": {
+      "eyebrow": "Sobre Ana Cristina Volante",
+      "title": "Un camino profesional construido en el aula",
+      "paragraph1": "Durante m\u00e1s de diez a\u00f1os he trabajado con ni\u00f1os de distintas escuelas a trav\u00e9s de clases extracurriculares de ingl\u00e9s en An Education Center (AEC).",
+      "paragraph2": "Esta experiencia revel\u00f3 una realidad recurrente: muchos estudiantes estudian ingl\u00e9s durante a\u00f1os pero no siempre desarrollan las herramientas, la confianza o las oportunidades que necesitan para comunicarse oralmente.",
+      "paragraph3": "Con m\u00e1s de ocho a\u00f1os de experiencia profesional en educaci\u00f3n ling\u00fc\u00edstica, liderazgo acad\u00e9mico y gesti\u00f3n institucional, he trabajado en dise\u00f1o de programas de ESL, formaci\u00f3n docente, desarrollo curricular, coordinaci\u00f3n acad\u00e9mica y aseguramiento de la calidad.",
+      "cta": "Conoce Mi Trayectoria",
+      "quote": "Creo en los educadores y en el poder transformador de un enfoque claro y pr\u00e1ctico para ense\u00f1ar ingl\u00e9s.",
+      "quoteName": "Ana Cristina Volante",
+      "quoteRole": "Fundadora, AEC",
+      "translationTitle": "Experiencia en Traducci\u00f3n Certificada",
+      "translationText": "Tambi\u00e9n soy Traductora Certificada de Ingl\u00e9s\u2013Espa\u00f1ol con experiencia legal, acad\u00e9mica y corporativa. Esto fortalece mi visi\u00f3n del idioma como herramienta para la comprensi\u00f3n, la expresi\u00f3n personal y la conexi\u00f3n en contextos reales y multiculturales.",
+      "toolTitle": "El Ingl\u00e9s como Herramienta de Comunicaci\u00f3n",
+      "toolText": "Ense\u00f1ar ingl\u00e9s no deber\u00eda limitarse a memorizar reglas gramaticales. Debe preparar a los estudiantes para usar el idioma con claridad, confianza y prop\u00f3sito."
+    },
+    "challenge": {
+      "eyebrow": "El Desaf\u00edo",
+      "title": "La Brecha de Competencia en Ingl\u00e9s en Latinoam\u00e9rica",
+      "description": "Latinoam\u00e9rica necesita una educaci\u00f3n en ingl\u00e9s que vaya m\u00e1s all\u00e1 del contenido y desarrolle la capacidad de entender, interactuar y comunicarse en situaciones reales.",
+      "cta": "Ver la Evidencia"
+    },
+    "pathway": {
+      "eyebrow": "The CLEAR Pathway",
+      "title": "Un Camino de Aprendizaje Progresivo",
+      "description": "Tres cursos especializados dise\u00f1ados para dar a los docentes las herramientas, la estructura y la confianza para ense\u00f1ar ingl\u00e9s con mayor efectividad.",
+      "cta": "Explorar Todos los Cursos",
+      "learnMore": "Saber M\u00e1s"
+    },
+    "resources": {
+      "tagline": "Elevemos juntos el est\u00e1ndar",
+      "cta": "Comienza Tu Camino"
+    }
+  },
+  "about": {
+    "meta": {
+      "title": "Sobre Ana Cristina Volante",
+      "description": "Soy Ana Cristina Volante, Directora Acad\u00e9mica de ESL, Traductora Certificada de Ingl\u00e9s\u2013Espa\u00f1ol y fundadora de An Education Center (AEC)."
+    },
+    "hero": {
+      "eyebrow": "Sobre Ana Cristina Volante",
+      "title": "Elevar el est\u00e1ndar de la educaci\u00f3n en ingl\u00e9s comienza con un marco de ense\u00f1anza claro.",
+      "description": "Soy Ana Cristina Volante, Directora Acad\u00e9mica de ESL, Traductora Certificada de Ingl\u00e9s\u2013Espa\u00f1ol y fundadora de An Education Center (AEC). Mi trabajo re\u00fane experiencia en el aula, liderazgo acad\u00e9mico y formaci\u00f3n docente para que el ingl\u00e9s se ense\u00f1e con prop\u00f3sito, estructura y resultados comunicativos reales."
+    },
+    "journey": {
+      "eyebrow": "Mi Historia",
+      "title": "Un camino profesional construido en el aula",
+      "paragraph1": "Durante m\u00e1s de diez a\u00f1os he trabajado con ni\u00f1os de distintas escuelas a trav\u00e9s de clases extracurriculares de ingl\u00e9s en An Education Center (AEC).",
+      "paragraph2": "Esta experiencia revel\u00f3 una realidad recurrente: muchos estudiantes estudian ingl\u00e9s durante a\u00f1os pero no siempre desarrollan las herramientas, la confianza o las oportunidades que necesitan para comunicarse oralmente.",
+      "paragraph3": "Con m\u00e1s de ocho a\u00f1os de experiencia profesional en educaci\u00f3n ling\u00fc\u00edstica, liderazgo acad\u00e9mico y gesti\u00f3n institucional, he trabajado en dise\u00f1o de programas de ESL, formaci\u00f3n docente, desarrollo curricular, coordinaci\u00f3n acad\u00e9mica y aseguramiento de la calidad.",
+      "quote": "Creo en los educadores y en el poder transformador de un enfoque claro y pr\u00e1ctico para ense\u00f1ar ingl\u00e9s.",
+      "quoteName": "Ana Cristina Volante",
+      "quoteRole": "Fundadora, AEC",
+      "translationTitle": "Experiencia en Traducci\u00f3n Certificada",
+      "translationText": "Tambi\u00e9n soy Traductora Certificada de Ingl\u00e9s\u2013Espa\u00f1ol con experiencia legal, acad\u00e9mica y corporativa. Esto fortalece mi visi\u00f3n del idioma como herramienta para la comprensi\u00f3n, la expresi\u00f3n personal y la conexi\u00f3n en contextos reales y multiculturales.",
+      "toolTitle": "El Ingl\u00e9s como Herramienta de Comunicaci\u00f3n",
+      "toolText": "Ense\u00f1ar ingl\u00e9s no deber\u00eda limitarse a memorizar reglas gramaticales. Debe preparar a los estudiantes para usar el idioma con claridad, confianza y prop\u00f3sito."
+    },
+    "closing": {
+      "eyebrow": "La Raz\u00f3n Detr\u00e1s de The CLEAR Pathway",
+      "description": "Mi experiencia en AEC mostr\u00f3 una brecha entre el tiempo que los estudiantes dedican a estudiar ingl\u00e9s y su capacidad para comunicarse. Por eso cre\u00e9 The CLEAR Pathway: una propuesta para elevar el est\u00e1ndar de la educaci\u00f3n en ingl\u00e9s en Venezuela y Latinoam\u00e9rica a trav\u00e9s de herramientas claras y pr\u00e1cticas para docentes, instituciones y emprendedores educativos.",
+      "cta": "Explorar el Problema que Resolvemos"
+    }
+  },
+  "challenge": {
+    "meta": {
+      "title": "El Desaf\u00edo y la Soluci\u00f3n",
+      "description": "Latinoam\u00e9rica necesita una educaci\u00f3n en ingl\u00e9s que vaya m\u00e1s all\u00e1 del contenido y desarrolle la capacidad de entender, interactuar y comunicarse en situaciones reales."
+    },
+    "intro": {
+      "eyebrow": "El Desaf\u00edo",
+      "title": "El ingl\u00e9s no puede quedarse en la gram\u00e1tica.",
+      "paragraph1": "Latinoam\u00e9rica necesita una educaci\u00f3n en ingl\u00e9s que vaya m\u00e1s all\u00e1 del contenido y desarrolle la capacidad de entender, interactuar y comunicarse en situaciones reales.",
+      "paragraph2": "El EF English Proficiency Index (EF EPI) 2025 se\u00f1ala una preocupaci\u00f3n importante. Entre los participantes latinoamericanos de 18 a 20 a\u00f1os, el \u00edndice reporta una disminuci\u00f3n de 57 puntos entre 2015 y 2025, mientras que los grupos de mayor edad mejoraron en ese per\u00edodo. Esta tendencia nos obliga a examinar no solo cu\u00e1nto ingl\u00e9s se ense\u00f1a, sino c\u00f3mo se ense\u00f1a."
+    },
+    "metricsNote": "El EF EPI utiliza resultados de adultos que tomaron el EF SET en l\u00ednea. Su muestra es autoseleccionada y no necesariamente representativa de todos los estudiantes ni de la poblaci\u00f3n completa. Debe leerse como un indicador comparativo relevante, no como un censo del sistema escolar.",
+    "gap": {
+      "eyebrow": "Por Qu\u00e9 Existe la Brecha",
+      "title": "El problema no es la motivaci\u00f3n. Es el enfoque de ense\u00f1anza.",
+      "paragraph1": "En la pr\u00e1ctica del aula, el curr\u00edculo puede dedicar tiempo al vocabulario, los ejercicios escritos y las reglas gramaticales, dejando muy poco espacio para que los estudiantes produzcan ingl\u00e9s de forma guiada y significativa. Sin oportunidades frecuentes para escuchar, hablar, formular ideas y recibir retroalimentaci\u00f3n, el aprendizaje del ingl\u00e9s puede convertirse en conocimiento pasivo en lugar de capacidad comunicativa.",
+      "paragraph2": "El Di\u00e1logo Interamericano ha documentado desaf\u00edos regionales relacionados con la competencia ling\u00fc\u00edstica de los docentes, su preparaci\u00f3n pedag\u00f3gica y los sistemas que apoyan y supervisan la pr\u00e1ctica en el aula."
+    },
+    "factors": {
+      "items": [
+        {
+          "number": "1",
+          "title": "Producci\u00f3n Oral",
+          "description": "Muy poco tiempo para el habla guiada, la interacci\u00f3n y el uso activo del ingl\u00e9s en clase."
+        },
+        {
+          "number": "2",
+          "title": "Preparaci\u00f3n Docente",
+          "description": "Preparaci\u00f3n desigual en competencia ling\u00fc\u00edstica, pedagog\u00eda y acompa\u00f1amiento continuo."
+        },
+        {
+          "number": "3",
+          "title": "Estructura Compartida",
+          "description": "Falta de gu\u00edas y criterios que conecten objetivos, pr\u00e1ctica y resultados."
+        }
+      ]
+    },
+    "lesson": {
+      "eyebrow": "Una Lecci\u00f3n de la Evoluci\u00f3n de la Ense\u00f1anza de Idiomas",
+      "paragraph": "La ense\u00f1anza de idiomas evolucion\u00f3 desde el M\u00e9todo de Gram\u00e1tica y Traducci\u00f3n, centrado en la traducci\u00f3n y las reglas, hacia enfoques que fortalecieron la exposici\u00f3n y la pr\u00e1ctica. La Ense\u00f1anza Comunicativa de Idiomas (CLT) finalmente puso la interacci\u00f3n, el significado y el uso funcional del idioma en el centro del aprendizaje.",
+      "quote": "El objetivo no es elegir entre gram\u00e1tica y comunicaci\u00f3n. El objetivo es ense\u00f1ar gram\u00e1tica para que los estudiantes puedan comunicarse con mayor efectividad."
+    },
+    "solution": {
+      "eyebrow": "La Soluci\u00f3n",
+      "title": "The CLEAR Pathway",
+      "description": "The CLEAR Pathway es un sistema de formaci\u00f3n docente. Ayuda a docentes e instituciones a determinar qu\u00e9 ense\u00f1ar, c\u00f3mo organizar cada clase y c\u00f3mo proteger el tiempo que los estudiantes necesitan para hablar.",
+      "features": [
+        {
+          "title": "Estructurado",
+          "description": "Un marco con tiempos definidos que usa Presentaci\u00f3n, Pr\u00e1ctica, Producci\u00f3n (PPP) e instrucci\u00f3n de lectura fundamentada en investigaci\u00f3n. Conecta objetivos, pr\u00e1ctica y producci\u00f3n."
+        },
+        {
+          "title": "Basado en Ciencia",
+          "description": "Integra ling\u00fc\u00edstica, educaci\u00f3n e investigaci\u00f3n cognitiva para decisiones de ense\u00f1anza m\u00e1s intencionales."
+        },
+        {
+          "title": "Enfocado en el Habla",
+          "description": "Una meta de 18 a 20 minutos de producci\u00f3n oral en cada clase de 60 minutos."
+        },
+        {
+          "title": "Listo para Usar",
+          "description": "Gu\u00edas y secuencias utilizables desde el primer d\u00eda; menos improvisaci\u00f3n y mayor consistencia."
+        }
+      ]
+    },
+    "strands": {
+      "eyebrow": "Seis L\u00edneas de Instrucci\u00f3n",
+      "title": "Cada clase se apoya en una base completa y fundamentada en investigaci\u00f3n",
+      "cta": "Explorar los Programas de Formaci\u00f3n",
+      "items": [
+        {
+          "title": "Ciencia de la Lectura",
+          "description": "Conciencia fonol\u00f3gica, fon\u00e9tica, decodificaci\u00f3n, fluidez, vocabulario y comprensi\u00f3n."
+        },
+        {
+          "title": "Lectura en Voz Alta / Lectura Guiada",
+          "description": "Literatura de alta calidad para la comprensi\u00f3n, el vocabulario y la fluidez."
+        },
+        {
+          "title": "Escritura",
+          "description": "Modelado docente, pr\u00e1ctica guiada y escritura independiente."
+        },
+        {
+          "title": "Gram\u00e1tica con PPP",
+          "description": "Presentaci\u00f3n, pr\u00e1ctica y producci\u00f3n, incluyendo verificaciones de concepto e instrucci\u00f3n."
+        },
+        {
+          "title": "Escucha y Habla",
+          "description": "Comprensi\u00f3n auditiva y expresi\u00f3n oral integradas de forma sistem\u00e1tica."
+        },
+        {
+          "title": "Ense\u00f1anza Comunicativa de Idiomas",
+          "description": "Temas reales, interacci\u00f3n y uso aut\u00e9ntico del ingl\u00e9s."
+        }
+      ]
+    },
+    "sources": {
+      "title": "Fuentes",
+      "item1": "[1] EF Education First. EF English Proficiency Index 2025.",
+      "item2": "[2] Di\u00e1logo Interamericano. Work in Progress: English Teaching and Teachers in Latin America (2019).",
+      "item3": "[3] EF Education First. About EF EPI: Methodology and Sampling Biases."
+    }
+  },
+  "courses": {
+    "meta": {
+      "title": "Cursos",
+      "description": "The CLEAR Pathway re\u00fane tres cursos para docentes y emprendedores educativos que quieren ense\u00f1ar ingl\u00e9s con mayor claridad, estructura y prop\u00f3sito comunicativo."
+    },
+    "hero": {
+      "eyebrow": "Cursos y Recursos",
+      "title": "Convierte un marco de ense\u00f1anza s\u00f3lido en clases de ingl\u00e9s que realmente funcionan.",
+      "description": "The CLEAR Pathway re\u00fane tres cursos para docentes y emprendedores educativos que quieren ense\u00f1ar ingl\u00e9s con mayor claridad, estructura y prop\u00f3sito comunicativo. Cada curso desarrolla una dimensi\u00f3n esencial de una clase de ESL: gram\u00e1tica a trav\u00e9s de una secuencia clara \u2192 lectura a trav\u00e9s de instrucci\u00f3n expl\u00edcita \u2192 comunicaci\u00f3n aut\u00e9ntica en el aula."
+    },
+    "learnMore": "Saber M\u00e1s",
+    "guidesSection": {
+      "eyebrow": "Cursos y Gu\u00edas",
+      "title": "Dos elementos distintos",
+      "description": "Los tres cursos anteriores son los cursos que se presentar\u00e1n en la oferta. Las siguientes gu\u00edas son materiales pedag\u00f3gicos de apoyo: organizan el contenido y los recursos que sustentan la formaci\u00f3n, pero no reemplazan ni renombran los cursos."
+    },
+    "guides": {
+      "items": [
+        {
+          "title": "Gu\u00eda Te\u00f3rica y Metodol\u00f3gica",
+          "description": "Explica la evoluci\u00f3n de la ense\u00f1anza de idiomas y los fundamentos pedag\u00f3gicos que sustentan The CLEAR Pathway."
+        },
+        {
+          "title": "Gu\u00eda de Gram\u00e1tica",
+          "description": "Organiza estructuras gramaticales y recursos para ense\u00f1arlas de forma visual, oral y comunicativa."
+        },
+        {
+          "title": "Gu\u00eda de Estructura de Clase",
+          "description": "Presenta secuencias y rutinas pr\u00e1cticas para estructurar las clases y fomentar la participaci\u00f3n oral."
+        }
+      ]
+    },
+    "complementary": {
+      "eyebrow": "Recurso Complementario",
+      "title": "Haz visible lo que necesitas ense\u00f1ar.",
+      "description": "La Gu\u00eda Infogr\u00e1fica re\u00fane temas de gram\u00e1tica en formatos visuales listos para proyectar, explicar o consultar en clase. Es un recurso complementario que apoya especialmente Grammar through PPP Model."
+    },
+    "recommendations": {
+      "eyebrow": "\u00bfQu\u00e9 Curso es Adecuado para Ti?",
+      "title": "Encuentra tu camino",
+      "items": [
+        {
+          "need": "Ense\u00f1ar y practicar gram\u00e1tica mediante una secuencia clara, visual y oral.",
+          "recommendation": "Grammar through PPP Model"
+        },
+        {
+          "need": "Desarrollar la lectura mediante instrucci\u00f3n expl\u00edcita y estructurada.",
+          "recommendation": "Reading through the Science of Reading"
+        },
+        {
+          "need": "Crear actividades donde los estudiantes interact\u00faen y usen el ingl\u00e9s con un prop\u00f3sito real.",
+          "recommendation": "Communicative Language Teaching"
+        },
+        {
+          "need": "Construir un programa completo y consistente para una instituci\u00f3n o emprendimiento educativo.",
+          "recommendation": "Los tres cursos completos"
+        }
+      ]
+    },
+    "closing": {
+      "title": "No necesitas elegir entre estructura y comunicaci\u00f3n. Puedes ense\u00f1ar con ambas.",
+      "description": "The CLEAR Pathway ofrece una ruta pr\u00e1ctica para comprender el marco, transformar la ense\u00f1anza de la gram\u00e1tica y estructurar clases donde los estudiantes usen el ingl\u00e9s con mayor confianza.",
+      "ctaPrimary": "Explorar el Camino Completo",
+      "ctaSecondary": "Solicitar Informaci\u00f3n para Tu Instituci\u00f3n"
+    },
+    "items": {
+      "grammarPpp": {
+        "eyebrow": "Curso 1",
+        "title": "Grammar through PPP Model",
+        "corePromise": "Ense\u00f1a gram\u00e1tica mediante una secuencia que lleva de la comprensi\u00f3n al uso comunicativo.",
+        "summary": "Este curso convierte la gram\u00e1tica en una herramienta de comunicaci\u00f3n. A trav\u00e9s del modelo PPP \u2014 Presentaci\u00f3n, Pr\u00e1ctica, Producci\u00f3n \u2014 los docentes aprenden a introducir una estructura con claridad, guiar la pr\u00e1ctica y crear una oportunidad real para que los estudiantes la usen al hablar.",
+        "includes": "El modelo PPP; producci\u00f3n oral antes de la escritura; apoyo visual; gestos; realia; repetici\u00f3n guiada; juegos; flashcards; y correcci\u00f3n respetuosa.",
+        "byTheEnd": "Los docentes pueden explicar estructuras con claridad, pasar de la comprensi\u00f3n a la producci\u00f3n, y dise\u00f1ar pr\u00e1ctica oral accesible y comunicativa.",
+        "idealFor": "Docentes de ingl\u00e9s de primaria, instructores que buscan clases m\u00e1s comunicativas, y emprendedores que necesitan una base pr\u00e1ctica para una ense\u00f1anza de ingl\u00e9s de alta calidad.",
+        "ctaLabel": "Quiero Ense\u00f1ar Grammar through the PPP Model"
+      },
+      "readingScience": {
+        "eyebrow": "Curso 2",
+        "title": "Reading through the Science of Reading",
+        "corePromise": "Desarrolla la lectura mediante instrucci\u00f3n expl\u00edcita y estructurada adaptada para estudiantes de ESL.",
+        "summary": "Este curso lleva los principios de Science of Reading al aula de ESL. Ayuda a los docentes a organizar una progresi\u00f3n que conecta sonidos, letras, decodificaci\u00f3n, fluidez, vocabulario y comprensi\u00f3n para que la lectura se ense\u00f1e de forma intencional y accesible.",
+        "includes": "Conciencia fonol\u00f3gica; fon\u00e9tica; decodificaci\u00f3n; lectura decodificable; fluidez; vocabulario; comprensi\u00f3n; y conexiones con la escritura.",
+        "byTheEnd": "Los docentes pueden planificar experiencias de lectura estructuradas, adaptar el apoyo para estudiantes multiling\u00fces, y conectar la lectura con el lenguaje oral y escrito.",
+        "idealFor": "Docentes de ingl\u00e9s de primaria, coordinadores acad\u00e9micos, e instituciones que quieren fortalecer una base s\u00f3lida de lectura dentro de un programa de ESL.",
+        "ctaLabel": "Quiero Ense\u00f1ar Reading through the Science of Reading"
+      },
+      "clt": {
+        "eyebrow": "Curso 3",
+        "title": "Communicative Language Teaching",
+        "corePromise": "Dise\u00f1a clases donde los estudiantes usan el ingl\u00e9s para interactuar y expresarse.",
+        "summary": "Este curso coloca la comunicaci\u00f3n en el centro de la clase. Los docentes aprenden a dise\u00f1ar temas, tareas y rutinas donde los estudiantes usan el ingl\u00e9s con un prop\u00f3sito: conversar, describir, entrevistar, resolver problemas, hacer role-play y presentar ideas.",
+        "includes": "Rutinas de escucha y habla; trabajo en parejas; juegos de vac\u00edo de informaci\u00f3n; entrevistas; role-plays; presentaciones; y actividades para grupos grandes.",
+        "goldenRule": "Reserva de 18 a 20 minutos de producci\u00f3n oral en cada clase de 60 minutos a trav\u00e9s de conversaciones, entrevistas, descripciones, role-plays, juegos de vac\u00edo de informaci\u00f3n y presentaciones breves.",
+        "largeClassActivities": "El curso incluye actividades para grupos grandes como Find Someone Who, Guess Who, Hot Seat, Two Truths and a Lie, Story Chain y Think-Pair-Share. Su prop\u00f3sito es que muchos estudiantes hablen simult\u00e1neamente en lugar de esperar turnos aislados.",
+        "idealFor": "Docentes que quieren aumentar la participaci\u00f3n oral, coordinadores que buscan clases m\u00e1s din\u00e1micas, y emprendedores educativos que quieren ofrecer experiencias de ESL centradas en la comunicaci\u00f3n.",
+        "ctaLabel": "Quiero Ense\u00f1ar con Communicative Language Teaching"
+      }
+    }
+  },
+  "courseDetail": {
+    "backLink": "\u2190 Volver a Todos los Cursos",
+    "includes": "Incluye",
+    "byTheEnd": "Al Finalizar",
+    "goldenRule": "La Regla de Oro",
+    "idealFor": "Ideal para: "
+  },
+  "faq": {
+    "meta": {
+      "title": "Preguntas Frecuentes",
+      "description": "Respuestas a preguntas comunes sobre Ana Cristina Volante, The CLEAR Pathway y sus cursos."
+    },
+    "eyebrow": "Soporte",
+    "title": "Preguntas Frecuentes",
+    "items": [
+      {
+        "question": "\u00bfQu\u00e9 es The CLEAR Pathway?",
+        "answer": "The CLEAR Pathway es un sistema de formaci\u00f3n docente creado por Ana Cristina Volante. Ayuda a docentes e instituciones a determinar qu\u00e9 ense\u00f1ar, c\u00f3mo organizar cada clase y c\u00f3mo proteger el tiempo que los estudiantes necesitan para hablar."
+      },
+      {
+        "question": "\u00bfPara qui\u00e9n est\u00e1n dise\u00f1ados los cursos?",
+        "answer": "Los cursos est\u00e1n dise\u00f1ados para docentes de ingl\u00e9s de primaria, coordinadores acad\u00e9micos, instructores que buscan clases m\u00e1s comunicativas, y emprendedores educativos que quieren una base pr\u00e1ctica para una ense\u00f1anza de ingl\u00e9s de alta calidad."
+      },
+      {
+        "question": "\u00bfCu\u00e1ntos cursos hay y qu\u00e9 cubren?",
+        "answer": "Hay tres cursos: Grammar through PPP Model, Reading through the Science of Reading, y Communicative Language Teaching. Cada uno desarrolla una dimensi\u00f3n esencial de una clase de ESL, desde la gram\u00e1tica hasta la lectura y la comunicaci\u00f3n aut\u00e9ntica."
+      },
+      {
+        "question": "\u00bfHay materiales de apoyo adem\u00e1s de los cursos?",
+        "answer": "S\u00ed. La Gu\u00eda Te\u00f3rica y Metodol\u00f3gica, la Gu\u00eda de Gram\u00e1tica y la Gu\u00eda de Estructura de Clase son materiales pedag\u00f3gicos de apoyo que organizan el contenido y los recursos que sustentan la formaci\u00f3n."
+      },
+      {
+        "question": "\u00bfCu\u00e1ndo estar\u00e1n disponibles los precios, horarios y detalles de inscripci\u00f3n?",
+        "answer": "El formato de entrega, la duraci\u00f3n, las fechas de inicio, los precios y los detalles de inscripci\u00f3n se est\u00e1n finalizando. Vuelve pronto o cont\u00e1ctanos directamente para la informaci\u00f3n m\u00e1s reciente."
+      }
+    ]
+  },
+  "privacyPolicy": {
+    "meta": {
+      "title": "Pol\u00edtica de Privacidad",
+      "description": "Pol\u00edtica de Privacidad de The CLEAR Pathway."
+    },
+    "eyebrow": "Legal",
+    "title": "Pol\u00edtica de Privacidad",
+    "paragraph1": "Nuestra Pol\u00edtica de Privacidad se est\u00e1 finalizando y ser\u00e1 publicada antes de que este sitio web comience a recopilar informaci\u00f3n personal a trav\u00e9s de formularios, inscripciones o compras. Explicar\u00e1 qu\u00e9 informaci\u00f3n recopilamos, c\u00f3mo se utiliza y las opciones disponibles para ti.",
+    "paragraph2": "Si tienes preguntas mientras tanto, cont\u00e1ctanos directamente."
+  },
+  "languagePrograms": {
+    "meta": {
+      "title": "Programas de Idiomas",
+      "description": "Programas personalizados de ingl\u00e9s y espa\u00f1ol para profesionales, equipos, empresas y residentes internacionales."
+    },
+    "hero": {
+      "eyebrow": "Programas de Idiomas",
+      "title": "Ingl\u00e9s y Espa\u00f1ol para el Trabajo y la Vida Real",
+      "description": "Programas de idiomas personalizados para profesionales, equipos, empresas y residentes internacionales.",
+      "formats": "En l\u00ednea o presencial \u00b7 Individual o grupal \u00b7 Ingl\u00e9s o espa\u00f1ol",
+      "tagline": "Comun\u00edcate con claridad. Con\u00e9ctate con confianza."
+    },
+    "audience": {
+      "eyebrow": "Para Qui\u00e9n Son los Programas",
+      "title": "El idioma que funciona donde ocurre la vida.",
+      "description": "Programas de Idiomas ofrece formaci\u00f3n en ingl\u00e9s y espa\u00f1ol adaptada a las necesidades reales de comunicaci\u00f3n de personas, equipos y organizaciones. Cada programa se dise\u00f1a seg\u00fan el contexto, los objetivos y el nivel del estudiante, para que cada sesi\u00f3n tenga un prop\u00f3sito claro y un valor pr\u00e1ctico.",
+      "groups": [
+        {
+          "number": "01",
+          "title": "Profesionales",
+          "description": "Para personas que quieren comunicarse con mayor confianza en reuniones, correos, presentaciones, viajes e interacciones profesionales cotidianas."
+        },
+        {
+          "number": "02",
+          "title": "Equipos y Empresas",
+          "description": "Para organizaciones que necesitan un programa a medida para empleados, equipos de atenci\u00f3n al cliente, colaboraci\u00f3n interna o desarrollo profesional."
+        },
+        {
+          "number": "03",
+          "title": "Residentes Internacionales",
+          "description": "Para personas que construyen confianza en ingl\u00e9s o espa\u00f1ol mientras trabajan, se conectan y gestionan su vida diaria en un nuevo entorno."
+        }
+      ]
+    },
+    "format": {
+      "eyebrow": "Modalidad Flexible",
+      "title": "Dise\u00f1ado en torno a las personas, los objetivos y el contexto.",
+      "description": "Los programas pueden entregarse en el formato que mejor apoye al estudiante o a la organizaci\u00f3n. El mismo enfoque pr\u00e1ctico centrado en la comunicaci\u00f3n aplica ya sea que el aprendizaje ocurra de forma individual, en equipo, en l\u00ednea o presencial.",
+      "options": [
+        {
+          "title": "En L\u00ednea o Presencial",
+          "description": "Elige sesiones en l\u00ednea para mayor flexibilidad entre ubicaciones, o sesiones presenciales para equipos y estudiantes que se benefician de un espacio f\u00edsico compartido."
+        },
+        {
+          "title": "Individual o Grupal",
+          "description": "Elige coaching individual para objetivos personales espec\u00edficos, o programas grupales que construyen un idioma compartido y colaboraci\u00f3n en el equipo."
+        },
+        {
+          "title": "Ingl\u00e9s o Espa\u00f1ol",
+          "description": "Selecciona el idioma que ayudar\u00e1 a los estudiantes a comunicarse con mayor efectividad en su contexto profesional, social o internacional actual."
+        },
+        {
+          "title": "Personalizado seg\u00fan la Necesidad",
+          "description": "Los programas pueden priorizar la comunicaci\u00f3n laboral, la atenci\u00f3n al cliente, el vocabulario profesional, la vida diaria, o una combinaci\u00f3n de objetivos."
+        }
+      ]
+    },
+    "outcomes": {
+      "eyebrow": "Lo que Ganan los Estudiantes",
+      "title": "La comunicaci\u00f3n es el objetivo, no solo completar una lecci\u00f3n.",
+      "description": "Los estudiantes desarrollan el idioma que necesitan para entender, participar y expresarse con mayor claridad y confianza en situaciones reales.",
+      "features": [
+        {
+          "title": "Comunicaci\u00f3n del Mundo Real",
+          "description": "Construye confianza para las conversaciones que ocurren en reuniones, interacciones con clientes, viajes, vida diaria y entornos interculturales."
+        },
+        {
+          "title": "Vocabulario Profesional",
+          "description": "Desarrolla vocabulario, frases y estrategias de comunicaci\u00f3n relevantes conectadas con el rol, la industria y los objetivos del estudiante."
+        },
+        {
+          "title": "Aprendizaje Enfocado en Objetivos",
+          "description": "Avanza hacia resultados definidos a trav\u00e9s de actividades pr\u00e1cticas, retroalimentaci\u00f3n dirigida y progreso significativo con el tiempo."
+        }
+      ]
+    },
+    "closing": {
+      "eyebrow": "Comenzar",
+      "title": "Dale a tu equipo el idioma para conectar, contribuir y crecer.",
+      "description": "Cu\u00e9ntanos sobre tu equipo, tus estudiantes y los objetivos de comunicaci\u00f3n m\u00e1s importantes. Te ayudaremos a identificar el formato y el enfoque que se ajusten a tus necesidades."
+    }
+  },
+  "notFound": {
+    "meta": {
+      "title": "P\u00e1gina No Encontrada"
+    },
+    "eyebrow": "404",
+    "title": "P\u00e1gina no encontrada",
+    "description": "La p\u00e1gina que buscas todav\u00eda no est\u00e1 disponible.",
+    "cta": "Volver al Inicio"
+  }
+}
