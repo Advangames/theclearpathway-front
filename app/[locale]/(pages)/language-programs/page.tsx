@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { getTranslations, setRequestLocale } from "next-intl/server";
+import logo from "@/assets/images/header/logo.png";
 import { localeAlternates } from "@/i18n/alternates";
 
 type PageProps = {
@@ -36,15 +38,23 @@ export default async function LanguageProgramsPage({ params }: PageProps) {
     <div>
       <section className="bg-paper">
         <div className="mx-auto max-w-4xl px-4 py-16 text-center sm:px-6 lg:px-8">
-          <p className="eyebrow justify-center">{t("hero.eyebrow")}</p>
-          <h1 className="mt-5 font-noto text-5xl leading-[0.98] text-navy sm:text-6xl">
-            {t("hero.title")}
-          </h1>
-          <p className="mt-5 leading-7 text-ink/80">{t("hero.description")}</p>
-          <p className="mt-6 text-xs font-bold uppercase tracking-[0.2em] text-gold-dark">
-            {t("hero.formats")}
-          </p>
-          <p className="mt-8 font-noto text-2xl leading-8 text-navy">{t("hero.tagline")}</p>
+          <div>
+            <p className="eyebrow justify-center">{t("hero.eyebrow")}</p>
+            <h1 className="mt-5 font-noto text-5xl leading-[0.98] text-navy sm:text-6xl">
+              {t("hero.title")}
+            </h1>
+            <p className="mt-5 leading-7 text-ink/80">{t("hero.description")}</p>
+            <Image
+              alt="Ana Cristina Volante Language Programs"
+              className="mx-auto mt-8 w-40 sm:w-48"
+              priority
+              src={logo}
+            />
+            <p className="mt-6 text-xs font-bold uppercase tracking-[0.2em] text-gold-dark">
+              {t("hero.formats")}
+            </p>
+            <p className="mt-8 font-noto text-2xl leading-8 text-navy">{t("hero.tagline")}</p>
+          </div>
         </div>
       </section>
 

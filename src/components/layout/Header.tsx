@@ -22,7 +22,7 @@ export function Header() {
 
   return (
     <header className="sticky top-0 z-50 bg-navy/95 text-white shadow-sm backdrop-blur">
-      <div className="mx-auto flex h-20 max-w-7xl items-center justify-between gap-6 px-4 sm:px-6 lg:px-8">
+      <div className="mx-auto flex h-24 max-w-7xl items-center justify-start gap-6 px-4 sm:px-6 lg:px-8">
         <BrandMark />
 
         <nav aria-label="Main navigation" className="hidden items-center gap-8 lg:flex">
@@ -37,7 +37,7 @@ export function Header() {
           ))}
         </nav>
 
-        <div className="hidden items-center gap-5 lg:flex">
+        <div className="ml-auto hidden items-center gap-5 lg:flex">
           <LanguageSwitcher />
           <Button href="/courses" size="sm">
             {t("getStarted")}
@@ -47,7 +47,7 @@ export function Header() {
         <button
           aria-expanded={isMenuOpen}
           aria-label="Toggle navigation"
-          className="grid size-11 place-items-center rounded-md border border-white/20 text-white lg:hidden"
+          className="ml-auto grid size-11 place-items-center rounded-md border border-white/20 text-white lg:hidden"
           onClick={() => setIsMenuOpen((current) => !current)}
           type="button"
         >

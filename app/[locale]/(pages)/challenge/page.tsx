@@ -114,7 +114,7 @@ export default async function ChallengePage({ params }: PageProps) {
 
       <section className="bg-navy text-white">
         <div className="mx-auto max-w-4xl px-4 py-16 text-center sm:px-6 lg:px-8">
-          <p className="eyebrow justify-center text-white before:bg-gold">
+          <p className="eyebrow justify-center !text-gold before:!bg-gold">
             {t("lesson.eyebrow")}
           </p>
           <p className="mt-6 leading-7 text-white/80">{t("lesson.paragraph")}</p>
