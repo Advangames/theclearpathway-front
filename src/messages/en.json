@@ -9,7 +9,7 @@
     "language": "Language"
   },
   "footer": {
-    "tagline": "A clear, practical and research-informed pathway for stronger ESL education.",
+    "tagline": "A clear, practical and research-informed pathway for stronger language education.",
     "explore": "Explore",
     "support": "Support",
     "legal": "Legal",
@@ -34,7 +34,7 @@
       },
       {
         "value": "Only 1",
-        "label": "country in the region reached the High Proficiency band in Latin America in EF EPI 2025.",
+        "label": "country in Latin America reached the High Proficiency band in EF EPI 2025.",
         "source": ""
       }
     ]
@@ -64,8 +64,8 @@
       "eyebrow": "The CLEAR Pathway",
       "name": "Ana Cristina Volante",
       "titleStart": "I am",
-      "titleEnd": ", an ESL Academic Director",
-      "subtitle": "Certified English\u2013Spanish Translator, and founder of An Education Center (AEC)",
+      "titleEnd": " - an ESL Academic Director,",
+      "subtitle": "Certified English\u2013Spanish Translator, and founder of An Education Center (AEC).",
       "description": "My work brings together classroom experience, academic leadership, and teacher training so English can be taught with purpose, structure, and real communicative outcomes.",
       "ctaPrimary": "Explore the Methodology",
       "ctaSecondary": "About Ana Cristina"
@@ -171,8 +171,8 @@
       ]
     },
     "lesson": {
-      "eyebrow": "A Lesson from the Evolution of Language Teaching",
-      "paragraph": "Language teaching evolved from the Grammar Translation Method, which focused on translation and rules, to approaches that strengthened exposure and practice. Communicative Language Teaching (CLT) ultimately placed interaction, meaning, and functional language use at the centre of learning.",
+      "eyebrow": "The Evolution of Language Teaching",
+      "paragraph": "Language teaching evolved from the Grammar - Translation Method, which focused on translation and rules, to approaches that strengthened exposure and practice. Communicative Language Teaching (CLT) ultimately placed interaction, meaning, and functional language use at the centre of learning.",
       "quote": "The goal is not to choose between grammar and communication. The goal is to teach grammar so students can communicate more effectively."
     },
     "solution": {
@@ -317,9 +317,9 @@
         "title": "Reading through the Science of Reading",
         "corePromise": "Develop reading through explicit, structured instruction adapted for ESL learners.",
         "summary": "This course brings Science of Reading principles into the ESL classroom. It helps teachers organise a progression that connects sounds, letters, decoding, fluency, vocabulary, and comprehension so reading is taught intentionally and accessibly.",
-        "includes": "Phonemic awareness; phonics; decoding; decodable reading; fluency; vocabulary; comprehension; and connections with writing.",
+        "includes": "Phonemic awareness; phonics; decoding; decodable reading; fluency; vocabulary; comprehension; and connections to writing.",
         "byTheEnd": "Teachers can plan structured reading experiences, adapt support for multilingual learners, and connect reading with oral and written language.",
-        "idealFor": "Primary English teachers, academic coordinators, and institutions that want to strengthen a solid reading foundation within an ESL program.",
+        "idealFor": "Primary English teachers, academic coordinators, and institutions that want to build a strong reading foundation within an ESL program.",
         "ctaLabel": "I Want to Teach Reading through the Science of Reading"
       },
       "clt": {
@@ -402,7 +402,7 @@
         {
           "number": "01",
           "title": "Professionals",
-          "description": "For people who want to communicate more confidently in meetings, emails, presentations, travel, and everyday professional interactions."
+          "description": "For people who want to communicate more confidently in meetings, by email, during presentations, while traveling, and in everyday professional interactions."
         },
         {
           "number": "02",
@@ -460,7 +460,7 @@
     },
     "closing": {
       "eyebrow": "Get Started",
-      "title": "Give your people the language to connect, contribute, and grow.",
+      "title": "Give your team the language skills to connect, contribute, and grow.",
       "description": "Tell us about your team, your learners, and the communication goals that matter most. We will help you identify the format and focus that fit your needs."
     }
   },
